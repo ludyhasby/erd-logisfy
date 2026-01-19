@@ -27,6 +27,7 @@ import { isRtl } from "../i18n/utils/rtl";
 import { useSearchParams } from "react-router-dom";
 import { get, SHARE_FILENAME } from "../api/gists";
 import { nanoid } from "nanoid";
+import { saveDataJsonToServer, loadDataJsonFromServer } from "../utils/serverJsonHandler";
 
 export const IdContext = createContext({
   gistId: "",
@@ -247,8 +248,8 @@ export default function WorkSpace() {
             setTitle(diagram.name);
             setTables(diagram.tables);
             setRelationships(diagram.references);
-            setAreas(diagram.areas);
             setNotes(diagram.notes);
+            setAreas(diagram.areas);
             setTasks(diagram.todos ?? []);
             setTransform({
               pan: diagram.pan,
@@ -459,6 +460,24 @@ export default function WorkSpace() {
     setVersion(null);
   };
 
+  const autoSaveToJson = useCallback(() => {
+    if (!settings.autoSaveJson) return;
+    
+    const diagramData = {
+      database,
+      title,
+      tables,
+      relationships,
+      notes,
+      areas,
+      types,
+      enums,
+      transform,
+    };
+    
+    saveDataJsonToServer(diagramData);
+  }, [settings.autoSaveJson, database, title, tables, relationships, notes, areas, types, enums, transform]);
+
   useEffect(() => {
     if (
       tables?.length === 0 &&
@@ -472,10 +491,14 @@ export default function WorkSpace() {
     if (settings.autosave) {
       setSaveState(State.SAVING);
     }
+    
+    // Auto-save to JSON if enabled
+    autoSaveToJson();
   }, [
     undoStack,
     redoStack,
     settings.autosave,
+    settings.autoSaveJson,
     tables?.length,
     areas?.length,
     notes?.length,
@@ -486,6 +509,101 @@ export default function WorkSpace() {
     title,
     gistId,
     setSaveState,
+    autoSaveToJson,
+  ]);
+
+  useEffect(() => {
+    document.title = "Editor | drawDB";
+
+    (async () => {
+      const shareId = searchParams.get("shareId");
+      if (shareId) {
+        await load();
+        return;
+      }
+
+      const existingCount = await db.diagrams.count();
+      if (existingCount > 0) {
+        await load();
+        return;
+      }
+
+      // No saved diagrams yet -> seed from public/data.json (if present)
+      const seeded = await loadDataJsonFromServer();
+      if (!seeded) {
+        await load();
+        return;
+      }
+
+      const seededDb = seeded.database || DB.GENERIC;
+      const seededTitle = seeded.title || "Seed Diagram";
+      const seededRelationships = seeded.relationships || seeded.references || [];
+      const seededNotes = seeded.notes || [];
+      const seededAreas = seeded.areas || seeded.subjectAreas || [];
+      const seededTodos = seeded.todos || seeded.tasks || [];
+      const seededTransform = seeded.transform || { pan: { x: 0, y: 0 }, zoom: 1 };
+
+      // Apply to state
+      setDatabase(seededDb);
+      setTitle(seededTitle);
+      setTables(seeded.tables || []);
+      setRelationships(seededRelationships);
+      setNotes(seededNotes);
+      setAreas(seededAreas);
+      setTasks(seededTodos);
+      setTransform(seededTransform);
+      setUndoStack([]);
+      setRedoStack([]);
+      if (seededDb && databases[seededDb]?.hasTypes) {
+        setTypes(seeded.types || []);
+      } else {
+        setTypes([]);
+      }
+      if (seededDb && databases[seededDb]?.hasEnums) {
+        setEnums(seeded.enums || []);
+      } else {
+        setEnums([]);
+      }
+
+      // Persist as first diagram in IndexedDB
+      const newId = await db.diagrams.add({
+        database: seededDb,
+        name: seededTitle,
+        gistId: "",
+        lastModified: new Date(),
+        tables: seeded.tables || [],
+        references: seededRelationships,
+        notes: seededNotes,
+        areas: seededAreas,
+        todos: seededTodos,
+        pan: seededTransform.pan,
+        zoom: seededTransform.zoom,
+        loadedFromGistId: "",
+        ...(databases[seededDb]?.hasEnums && { enums: seeded.enums || [] }),
+        ...(databases[seededDb]?.hasTypes && { types: seeded.types || [] }),
+      });
+
+      setId(newId);
+      window.name = `d ${newId}`;
+      setSaveState(State.SAVED);
+      setLastSaved(new Date().toLocaleString());
+    })();
+  }, [
+    searchParams,
+    load,
+    setDatabase,
+    setTitle,
+    setTables,
+    setRelationships,
+    setNotes,
+    setAreas,
+    setTasks,
+    setTransform,
+    setUndoStack,
+    setRedoStack,
+    setTypes,
+    setEnums,
+    setSaveState,
   ]);
 
   useEffect(() => {
@@ -495,12 +613,6 @@ export default function WorkSpace() {
 
     save();
   }, [saveState, layout, save]);
-
-  useEffect(() => {
-    document.title = "Editor | drawDB";
-
-    load();
-  }, [load]);
 
   return (
     <div className="h-full flex flex-col overflow-hidden theme">

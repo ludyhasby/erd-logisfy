@@ -9,6 +9,7 @@ const defaultSettings = {
   showDataTypes: true,
   mode: "light",
   autosave: true,
+  autoSaveJson: false,
   showCardinality: true,
   showRelationshipLabels: true,
   tableWidth: tableWidth,

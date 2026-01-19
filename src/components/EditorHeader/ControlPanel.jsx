@@ -81,6 +81,7 @@ import { IdContext } from "../Workspace";
 import { socials } from "../../data/socials";
 import { toDBML } from "../../utils/exportAs/dbml";
 import { exportSavedData } from "../../utils/exportSavedData";
+import { exportDiagramToJson, importDiagramFromJson, createJsonFileInput } from "../../utils/exportImportJson";
 import { nanoid } from "nanoid";
 import { getTableHeight } from "../../utils/utils";
 import { deleteFromCache, STORAGE_KEY } from "../../utils/cache";
@@ -748,6 +749,55 @@ export default function ControlPanel({
     setLayout((prev) => ({ ...prev, dbmlEditor: !prev.dbmlEditor }));
   };
   const save = () => setSaveState(State.SAVING);
+
+  const exportToJson = () => {
+    const diagramData = {
+      database,
+      title,
+      tables,
+      relationships,
+      notes,
+      areas,
+      types,
+      enums,
+      transform,
+    };
+    exportDiagramToJson(diagramData, title.replace(/[^a-zA-Z0-9]/g, '_'));
+  };
+
+  const importFromJson = async () => {
+    try {
+      const file = await createJsonFileInput();
+      const data = await importDiagramFromJson(file);
+      
+      // Clear current diagram
+      setTables([]);
+      setRelationships([]);
+      setNotes([]);
+      setAreas([]);
+      setTypes([]);
+      setEnums([]);
+      setUndoStack([]);
+      setRedoStack([]);
+      
+      // Load imported data
+      if (data.database) {
+        setDatabase(data.database);
+      }
+      setTitle(data.title || 'Imported Diagram');
+      setTables(data.tables || []);
+      setRelationships(data.relationships || []);
+      setNotes(data.notes || []);
+      setAreas(data.areas || []);
+      setTypes(data.types || []);
+      setEnums(data.enums || []);
+      setTransform(data.transform || { pan: { x: 0, y: 0 }, zoom: 1 });
+      
+      Toast.success(t("diagram_imported_successfully"));
+    } catch (error) {
+      Toast.error(t("failed_to_import_diagram") + ": " + error.message);
+    }
+  };
   const recentlyOpenedDiagrams = useLiveQuery(() =>
     db.diagrams.orderBy("lastModified").reverse().limit(10).toArray(),
   );
@@ -917,7 +967,7 @@ export default function ControlPanel({
       import_from: {
         children: [
           {
-            function: fileImport,
+            function: importFromJson,
             name: "JSON",
             disabled: layout.readOnly,
           },
@@ -1119,6 +1169,10 @@ export default function ControlPanel({
       },
       export_as: {
         children: [
+          {
+            name: "JSON",
+            function: exportToJson,
+          },
           {
             name: "PNG",
             function: () => {
@@ -1532,6 +1586,15 @@ export default function ControlPanel({
         ),
         function: () =>
           setSettings((prev) => ({ ...prev, autosave: !prev.autosave })),
+      },
+      autosave_json: {
+        state: settings.autoSaveJson ? (
+          <i className="bi bi-toggle-on" />
+        ) : (
+          <i className="bi bi-toggle-off" />
+        ),
+        function: () =>
+          setSettings((prev) => ({ ...prev, autoSaveJson: !prev.autoSaveJson })),
       },
       table_width: {
         function: () => setModal(MODAL.TABLE_WIDTH),

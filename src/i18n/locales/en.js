@@ -27,6 +27,8 @@ const en = {
     are_you_sure_delete_diagram:
       "Are you sure you want to delete this diagram? This operation is irreversible.",
     oops_smth_went_wrong: "Oops! Something went wrong.",
+    diagram_imported_successfully: "Diagram imported successfully!",
+    failed_to_import_diagram: "Failed to import diagram",
     import_diagram: "Import diagram",
     import_from_source: "Import from SQL",
     export_as: "Export as",
@@ -74,6 +76,7 @@ const en = {
     coordinate_space: "Space",
     coordinate_space_screen: "Screen",
     coordinate_space_diagram: "Diagram",
+    autosave_json: "Auto-save to data.json",
     table_width: "Table width",
     language: "Language",
     flush_storage: "Flush storage",
