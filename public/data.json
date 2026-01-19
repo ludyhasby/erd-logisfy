@@ -235,8 +235,8 @@
       ],
       "indices": [],
       "id": "hu3y_rYUguheIkSaiLnps",
-      "x": 1854.693050891391,
-      "y": -111.43830690621454
+      "x": 1859.4505361714455,
+      "y": -122.55880927202185
     },
     {
       "name": "admin",
@@ -1645,8 +1645,8 @@
       ],
       "indices": [],
       "id": "hkv2xEaWI161oVUlxK8it",
-      "x": 830.6042239218433,
-      "y": 842.4049742604332
+      "x": 808.1416995810611,
+      "y": 838.3208966298465
     },
     {
       "name": "trip_load",
@@ -2337,14 +2337,14 @@
       ],
       "indices": [],
       "id": "gFwNZxeMwaplL2dnZUlxR",
-      "x": 1203.231408757211,
-      "y": 1193.0590083671864
+      "x": 1236.2365284910245,
+      "y": 1777.981936181629
     },
     {
       "id": "yNDcN_B7pavpT4eW0G350",
       "name": "report",
-      "x": 889.2403942188769,
-      "y": -529.2885596380729,
+      "x": 802.5174445262536,
+      "y": 150.8374664538071,
       "locked": false,
       "fields": [
         {
@@ -2376,7 +2376,7 @@
         {
           "id": "Xjk1iqfZwkBmyYVUrqmUr",
           "name": "trip_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
@@ -2475,7 +2475,7 @@
       "updateConstraint": "No action",
       "deleteConstraint": "No action",
       "name": "fk_user_account_account_uuid_account",
-      "id": 0
+      "id": "daGNeR15E0y2bgykcfVx-"
     },
     {
       "startTableId": "hu3y_rYUguheIkSaiLnps",
@@ -2533,17 +2533,6 @@
       "id": 6
     },
     {
-      "startTableId": "q6yGHDBI_-OWa7jw-NJrh",
-      "startFieldId": "vjjtAocvtuW7aSsJca5fh",
-      "endTableId": "O-F8g9kq8Oc1yuAlNrW_A",
-      "endFieldId": "PfykJR8B4B7KUVKvGbb6g",
-      "cardinality": "many_to_one",
-      "updateConstraint": "No action",
-      "deleteConstraint": "No action",
-      "name": "fk_vehicle_expense_account_uuid_account",
-      "id": 7
-    },
-    {
       "startTableId": "1mDxCYHEE3SAtfbev3xTl",
       "startFieldId": "_WqdE1M3ceTGJ8o6KUzu9",
       "endTableId": "O-F8g9kq8Oc1yuAlNrW_A",
@@ -2564,17 +2553,6 @@
       "deleteConstraint": "No action",
       "name": "fk_vehicle_maintenance_account_uuid_account",
       "id": 9
-    },
-    {
-      "startTableId": "q6yGHDBI_-OWa7jw-NJrh",
-      "startFieldId": "SO5EVzWJQQ8OgF2U_DTGP",
-      "endTableId": "hu3y_rYUguheIkSaiLnps",
-      "endFieldId": "Fwvom9yJcID7ZIcQBMh9u",
-      "cardinality": "many_to_one",
-      "updateConstraint": "No action",
-      "deleteConstraint": "No action",
-      "name": "fk_vehicle_expense_user_uuid_users",
-      "id": 10
     },
     {
       "startTableId": "1mDxCYHEE3SAtfbev3xTl",
@@ -2641,6 +2619,72 @@
       "deleteConstraint": "No action",
       "name": "fk_trip_account_uuid_account",
       "id": "U6iY_tTihVJ-pjkQldxIj"
+    },
+    {
+      "startTableId": "q6yGHDBI_-OWa7jw-NJrh",
+      "startFieldId": "wuPhQ-BpH9IH1r6mOM6p3",
+      "endTableId": "EKafqEOHSRV5nf3NthS48",
+      "endFieldId": "fj8tz63zzcRJnLxOUhgtc",
+      "cardinality": "many_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_vehicle_expense_vehicle_maintenance_uuid_vehicle_maintenance",
+      "id": "1kCFBmMTnwNHB-ovYpZJ1"
+    },
+    {
+      "startTableId": "q6yGHDBI_-OWa7jw-NJrh",
+      "startFieldId": "jZ3pyrxABO6dFuY_0Bu4B",
+      "endTableId": "1mDxCYHEE3SAtfbev3xTl",
+      "endFieldId": "hKNJXpqW-_36fR-3d3efS",
+      "cardinality": "many_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_vehicle_expense_vehicle_uuid_vehicle",
+      "id": "iyGymk2nZE2v-SbKOV85o"
+    },
+    {
+      "startTableId": "hkv2xEaWI161oVUlxK8it",
+      "startFieldId": "KdrERLrmcgffBEkq5lkuT",
+      "endTableId": "U4yCYQXzCc5Wwk4cYoQcL",
+      "endFieldId": "VbrHJiAZSiIp3z--qnDFG",
+      "cardinality": "many_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_reimbursement_trip_load_uuid_trip_load",
+      "id": "TcEX98Rg-OQDI9PORXSvv"
+    },
+    {
+      "startTableId": "hkv2xEaWI161oVUlxK8it",
+      "startFieldId": "q8j3xi_46dv6WA7_WpJiZ",
+      "endTableId": "kLFLzkeIMcIdKOSqWh7ZC",
+      "endFieldId": "yYlvHtY1jbEgAsuTsloCQ",
+      "cardinality": "many_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_reimbursement_trip_uuid_trip",
+      "id": "YxqgZ5l2xWErDBjVjoRIe"
+    },
+    {
+      "startTableId": "Ksr56UUyiKc6bC05Dzzvx",
+      "startFieldId": "DSrRWUh2wcQEJyGWnvO6V",
+      "endTableId": "U4yCYQXzCc5Wwk4cYoQcL",
+      "endFieldId": "VbrHJiAZSiIp3z--qnDFG",
+      "cardinality": "many_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_trip_log_payment_trip_load_uuid_trip_load",
+      "id": "BohTboKEdWmCtvnpMwW0r"
+    },
+    {
+      "startTableId": "yNDcN_B7pavpT4eW0G350",
+      "startFieldId": "Xjk1iqfZwkBmyYVUrqmUr",
+      "endTableId": "kLFLzkeIMcIdKOSqWh7ZC",
+      "endFieldId": "yYlvHtY1jbEgAsuTsloCQ",
+      "cardinality": "many_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_report_trip_uuid_trip",
+      "id": "SFjko6RjmhD9HJnzUop7u"
     }
   ],
   "notes": [],
