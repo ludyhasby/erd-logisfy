@@ -8,11 +8,11 @@
         {
           "id": "PfykJR8B4B7KUVKvGbb6g",
           "name": "account_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -20,11 +20,11 @@
         {
           "id": "-mNL2X9w4XkIli7icsQDD",
           "name": "email",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -32,11 +32,11 @@
         {
           "id": "IkictmUCLqDLsG85Mqell",
           "name": "company_name",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -44,26 +44,34 @@
         {
           "id": "EtZykon1zJdeaGOXGIMJh",
           "name": "business_role",
-          "type": "TEXT",
+          "type": "ENUM",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "values": [
+            "TRANSPORTER",
+            "SHIPPER"
+          ]
         },
         {
           "id": "3lBborzsmeLlZLURu4wO6",
           "name": "status",
-          "type": "TEXT",
+          "type": "ENUM",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "values": [
+            "TRANSPORTER",
+            "SHIPPER"
+          ]
         },
         {
           "id": "L_4q64x-CSwmJfG7EznNk",
@@ -72,7 +80,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -84,7 +92,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -96,7 +104,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -115,11 +123,11 @@
         {
           "id": "Fwvom9yJcID7ZIcQBMh9u",
           "name": "user_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -127,11 +135,11 @@
         {
           "id": "tMjYSLVIlZL9_j2Gsv2r1",
           "name": "name",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -139,11 +147,11 @@
         {
           "id": "igCkNwd3DIP57MLC4E8od",
           "name": "email",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -151,11 +159,11 @@
         {
           "id": "6UvyM1jP_fNv9mCCH30P0",
           "name": "password",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -163,14 +171,18 @@
         {
           "id": "-8qQecx93gLPXW4854e7F",
           "name": "status",
-          "type": "TEXT",
+          "type": "ENUM",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "values": [
+            "TRANSPORTER",
+            "SHIPPER"
+          ]
         },
         {
           "id": "78lJSnfBJix8-mKlUsAmy",
@@ -179,7 +191,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -187,11 +199,11 @@
         {
           "id": "Cj08p6kBrc2RJ3mm66DWV",
           "name": "account_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -203,7 +215,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -215,7 +227,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -227,7 +239,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -246,11 +258,11 @@
         {
           "id": "0oz8y59mRCzvospmYjDQl",
           "name": "admin_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -258,11 +270,11 @@
         {
           "id": "71ekYo1KzIWB9zLe5Xm7K",
           "name": "username",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -270,11 +282,11 @@
         {
           "id": "s-IllTY9i7tlLoVEhzkC9",
           "name": "email",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -282,11 +294,11 @@
         {
           "id": "O41YdhXb9gnQa2ViIwnuP",
           "name": "name",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -294,11 +306,11 @@
         {
           "id": "J9SiYjAwf5mmKrvB4APnI",
           "name": "password",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -310,7 +322,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -318,11 +330,11 @@
         {
           "id": "-MIamxcCDE9Wjxlohna5y",
           "name": "account_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -334,7 +346,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -346,7 +358,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -358,7 +370,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -377,11 +389,11 @@
         {
           "id": "ua-Mi14-VKXURJaXT67Ez",
           "name": "user_account_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -389,11 +401,11 @@
         {
           "id": "i-iNcrZ0Ki4nGvG2jNzjH",
           "name": "account_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -401,11 +413,11 @@
         {
           "id": "9HzJCyMhyd__4a4V_vzoc",
           "name": "user_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -413,14 +425,19 @@
         {
           "id": "6IArCB3MZtESVl8il3kYN",
           "name": "role",
-          "type": "TEXT",
+          "type": "ENUM",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "values": [
+            "PRIMARY",
+            "PARTNER",
+            "DRIVER"
+          ]
         },
         {
           "id": "Vp0yTRB4MLx_RdXZtTOsn",
@@ -429,7 +446,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -441,7 +458,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -453,7 +470,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -473,11 +490,11 @@
         {
           "id": "l2PtsRICmuZ0eoWXrbn6C",
           "name": "master_vendor_agent_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -485,11 +502,11 @@
         {
           "id": "fiEVvIUZHHemkod0r8hwm",
           "name": "vendor",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -497,11 +514,11 @@
         {
           "id": "KmZBRgfeBJi1hrm2DO2s0",
           "name": "agent",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -509,11 +526,11 @@
         {
           "id": "OpImQhd7TktNNyQpAUldq",
           "name": "customer",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -521,11 +538,11 @@
         {
           "id": "UpMrCgVXvkGXbZDtVoHzt",
           "name": "warehouse",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -533,11 +550,11 @@
         {
           "id": "vTasDukzILW4DrBvGyZ40",
           "name": "origin",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -545,11 +562,11 @@
         {
           "id": "jAE10_uFJ8QCfoV6f8BjF",
           "name": "destination",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -561,7 +578,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -573,7 +590,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -581,11 +598,11 @@
         {
           "id": "2hJ-uvooKfyXsHlKmHB3N",
           "name": "status",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -593,11 +610,11 @@
         {
           "id": "ewKJhRjjzAdIG0Wr3WRDV",
           "name": "account_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -609,7 +626,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -621,7 +638,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -633,7 +650,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -652,11 +669,11 @@
         {
           "id": "Xr0FPGs5i_piLV7jmAg8j",
           "name": "master_trip_payment_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -664,11 +681,11 @@
         {
           "id": "ln8WgycPOyd2d4bPIUuoD",
           "name": "master_vendor_agent_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -680,7 +697,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -692,7 +709,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -700,11 +717,11 @@
         {
           "id": "ZwyVRQadCA7ksC0x30IAT",
           "name": "account_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -716,7 +733,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -728,7 +745,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -740,7 +757,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -759,11 +776,11 @@
         {
           "id": "hKNJXpqW-_36fR-3d3efS",
           "name": "vehicle_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -771,11 +788,11 @@
         {
           "id": "_WqdE1M3ceTGJ8o6KUzu9",
           "name": "account_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -783,11 +800,11 @@
         {
           "id": "-14aY-_5TvADw-5JtxVXo",
           "name": "user_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -795,11 +812,11 @@
         {
           "id": "3YSGBzV1kj3VwTBBeg4Bt",
           "name": "name",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -807,23 +824,32 @@
         {
           "id": "Szstc7qSqWvGaUZcBrjxw",
           "name": "type",
-          "type": "TEXT",
+          "type": "ENUM",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
-          "default": "",
-          "check": ""
+          "default": "REEFER",
+          "check": "",
+          "values": [
+            "BLINDVAN",
+            "L300",
+            "CDE",
+            "CDD",
+            "REEFER",
+            "WINGBOX",
+            "TRAILER"
+          ]
         },
         {
           "id": "DfIpg3A7DCAqxwnDEOyEB",
           "name": "brand",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -831,11 +857,11 @@
         {
           "id": "hieXFtOyGkATAu5ojSKCQ",
           "name": "plate_number",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -843,11 +869,11 @@
         {
           "id": "0j_3mbTT1JaOdcZfMrmXP",
           "name": "year",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -855,11 +881,11 @@
         {
           "id": "Twd1ETgivQIP4boH_N52r",
           "name": "color",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -867,14 +893,18 @@
         {
           "id": "rvqMSM4BrgHlCZK5VcjWF",
           "name": "owner_type",
-          "type": "TEXT",
+          "type": "ENUM",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "values": [
+            "OWN",
+            "PARTNER"
+          ]
         },
         {
           "id": "pIxKI4m4qGQGbeD_PZ3xG",
@@ -886,7 +916,8 @@
           "notNull": false,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": ""
         },
         {
           "id": "RJiBp3cscSBmA1QDX3SqH",
@@ -895,7 +926,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -907,7 +938,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -919,7 +950,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -928,7 +959,8 @@
       "indices": [],
       "id": "1mDxCYHEE3SAtfbev3xTl",
       "x": 2293.253993222497,
-      "y": 417.33978623209714
+      "y": 417.33978623209714,
+      "hidden": false
     },
     {
       "name": "vehicle_maintenance",
@@ -938,11 +970,11 @@
         {
           "id": "fj8tz63zzcRJnLxOUhgtc",
           "name": "vehicle_maintenance_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -950,11 +982,11 @@
         {
           "id": "eZffisF8-K_YTdtNFbFmp",
           "name": "account_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -962,11 +994,11 @@
         {
           "id": "XA1gGCHELoF2Zn3AbiK-F",
           "name": "vehicle_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -974,11 +1006,11 @@
         {
           "id": "VqouyXBIy31lxrflv-du4",
           "name": "title",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -986,14 +1018,20 @@
         {
           "id": "jedSXU-YqaiT7Azm9mfib",
           "name": "schedule_type",
-          "type": "TEXT",
+          "type": "ENUM",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
-          "default": "",
-          "check": ""
+          "default": "MONTHLY",
+          "check": "",
+          "values": [
+            "WEEKLY",
+            "MONTHLY",
+            "YEARLY",
+            "ONE_TIME"
+          ]
         },
         {
           "id": "E4xw95gPqaR8YYgXLla1Z",
@@ -1002,7 +1040,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1017,79 +1055,116 @@
           "notNull": false,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": ""
         },
         {
           "id": "qZ878x3ykidyj8h6Z7QOn",
           "name": "status",
-          "type": "TEXT",
+          "type": "ENUM",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
+          "default": "ACTIVE",
+          "check": "",
+          "values": [
+            "ACTIVE",
+            "SUSPEND"
+          ]
+        },
+        {
+          "id": "E5-umksLbLVAz70gOjVQT",
+          "name": "count",
+          "type": "INT",
           "default": "",
-          "check": ""
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
         },
         {
           "id": "vdtv2rFYfAdlWVNCQ2ffD",
           "name": "schedule_day",
-          "type": "BIGINT",
+          "type": "DATE",
           "comment": "",
           "unique": false,
           "increment": false,
           "notNull": false,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": "",
+          "values": []
         },
         {
           "id": "xq766lLOADGLq-Zk1awLr",
-          "name": "schedule_date",
-          "type": "TEXT",
+          "name": "by_date",
+          "type": "INT",
           "comment": "",
           "unique": false,
           "increment": false,
           "notNull": false,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": "",
+          "values": []
         },
         {
           "id": "CigOS0nemDuJI8Ua6-w4m",
-          "name": "created_at",
-          "type": "TIMESTAMP",
+          "name": "by_month",
+          "type": "INT",
           "comment": "",
           "unique": false,
           "increment": false,
           "notNull": false,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": "",
+          "values": []
         },
         {
           "id": "_KGhRTyLmdF_U6E3P0MC0",
-          "name": "updated_at",
-          "type": "TIMESTAMP",
+          "name": "by_day",
+          "type": "ENUM",
           "comment": "",
           "unique": false,
           "increment": false,
           "notNull": false,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": "",
+          "values": [
+            "SENIN",
+            "SELASA",
+            "RABU",
+            "KAMIS",
+            "JUMAT",
+            "SABTU",
+            "MINGGU"
+          ]
         },
         {
           "id": "-n6tqWSilOrCl9GoNlQRr",
-          "name": "deleted_at",
-          "type": "TIMESTAMP",
+          "name": "interval",
+          "type": "INT",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": "",
+          "values": []
         }
       ],
       "indices": [],
@@ -1106,7 +1181,7 @@
       "fields": [
         {
           "name": "vehicle_expense_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": true,
@@ -1120,12 +1195,12 @@
         {
           "id": "vjjtAocvtuW7aSsJca5fh",
           "name": "account_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -1133,7 +1208,7 @@
         {
           "id": "SO5EVzWJQQ8OgF2U_DTGP",
           "name": "user_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
@@ -1146,7 +1221,7 @@
         {
           "id": "wuPhQ-BpH9IH1r6mOM6p3",
           "name": "vehicle_maintenance_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
@@ -1159,12 +1234,12 @@
         {
           "id": "jZ3pyrxABO6dFuY_0Bu4B",
           "name": "vehicle_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -1172,12 +1247,12 @@
         {
           "id": "QBIhCgiP-KDvbkIGXSqwb",
           "name": "title",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -1190,7 +1265,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "values": [
@@ -1208,7 +1283,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": "",
@@ -1222,7 +1297,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": "",
@@ -1231,12 +1306,12 @@
         {
           "id": "q8-hRNBq0CcPM_0B9lTzD",
           "name": "description",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -1271,7 +1346,7 @@
       "fields": [
         {
           "name": "package_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": true,
@@ -1285,12 +1360,12 @@
         {
           "id": "JQ5l4QraTKy5b3MWqD-aN",
           "name": "name",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -1303,7 +1378,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "values": [
@@ -1319,7 +1394,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": "",
@@ -1333,7 +1408,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": "",
@@ -1347,7 +1422,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "values": [
@@ -1358,12 +1433,12 @@
         {
           "id": "nQD3yKovGNwMM_nBAb42e",
           "name": "description",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -1376,7 +1451,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": "",
@@ -1410,7 +1485,7 @@
       "fields": [
         {
           "name": "account_package_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": true,
@@ -1424,12 +1499,12 @@
         {
           "id": "Zl07RfjMITRMkQSmA_qei",
           "name": "account_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -1437,12 +1512,12 @@
         {
           "id": "xnhDKAMDed7wO4cL1uEOD",
           "name": "package_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -1455,7 +1530,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": "",
@@ -1469,7 +1544,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": "",
@@ -1478,7 +1553,7 @@
         {
           "id": "tg8u_TfP0NHYj579QM1Tt",
           "name": "notes",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
@@ -1505,7 +1580,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -1517,7 +1592,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1529,7 +1604,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1541,7 +1616,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1553,7 +1628,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1565,7 +1640,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1573,11 +1648,11 @@
         {
           "id": "MDx-zYA5SPjnxQE0lQsAN",
           "name": "description",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1589,7 +1664,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1601,7 +1676,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1609,19 +1684,25 @@
         {
           "id": "KvlExnll04i1-bX9mtYmV",
           "name": "status",
-          "type": "VARCHAR",
+          "type": "ENUM",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "values": [
+            "SUBMITTED",
+            "APPROVED",
+            "REJECTED",
+            "PAID"
+          ]
         },
         {
           "id": "YsY1NhlFABIcvjbDB2ewM",
           "name": "notes",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
@@ -1660,7 +1741,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -1672,7 +1753,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1684,7 +1765,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1696,7 +1777,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1720,7 +1801,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1732,7 +1813,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1744,7 +1825,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1756,7 +1837,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1768,7 +1849,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1792,7 +1873,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1812,14 +1893,19 @@
         {
           "id": "L3MdydXfmU4_hUfa9J3ZN",
           "name": "revenue_status",
-          "type": "VARCHAR",
+          "type": "ENUM",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "values": [
+            "PENDING",
+            "PARTIAL",
+            "PAID"
+          ]
         },
         {
           "id": "Vrzn2D9ohd9JpzB5obx8F",
@@ -1828,22 +1914,30 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": ""
         },
         {
           "id": "1sB4iKAKI6yscNq1c8qLa",
           "name": "status",
-          "type": "VARCHAR",
+          "type": "ENUM",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "values": [
+            "PENDING",
+            "LOADING",
+            "ON_TRIP",
+            "COMPLETED",
+            "CANCELLED"
+          ]
         },
         {
           "id": "nV-3MGU6Xzs8Qjjlrje6j",
@@ -1852,7 +1946,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1875,7 +1969,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -1883,11 +1977,11 @@
         {
           "id": "ya9Hgaywdz35JVsUKpdvA",
           "name": "account_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": "",
@@ -1900,7 +1994,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1924,7 +2018,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1936,7 +2030,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1948,7 +2042,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1960,7 +2054,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1972,7 +2066,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1980,14 +2074,20 @@
         {
           "id": "QZSdORyLGQIT2zPE7n8Zn",
           "name": "status",
-          "type": "VARCHAR",
+          "type": "ENUM",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "values": [
+            "PLANNED",
+            "RUNNING",
+            "COMPLETED",
+            "CANCELED"
+          ]
         },
         {
           "id": "EtsjT3K1ytZKTp5e6pmod",
@@ -1999,7 +2099,8 @@
           "notNull": false,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": ""
         }
       ],
       "indices": [],
@@ -2019,7 +2120,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -2031,7 +2132,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2043,7 +2144,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2055,7 +2156,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2102,7 +2203,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -2114,7 +2215,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2126,7 +2227,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2138,7 +2239,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2150,7 +2251,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2162,7 +2263,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2170,31 +2271,42 @@
         {
           "id": "26Ih9Q4VYlbFiK0r1377N",
           "name": "trigger",
-          "type": "VARCHAR",
+          "type": "ENUM",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
-          "default": "",
-          "check": ""
+          "default": "BEFORE_START",
+          "check": "",
+          "values": [
+            "BEFORE_START",
+            "AFTER_LOAD",
+            "MIDWAY",
+            "AFTER_UNLOAD",
+            "FINISH"
+          ]
         },
         {
           "id": "oWK-jOIZyNahnW0cPZPYF",
           "name": "status",
-          "type": "VARCHAR",
+          "type": "ENUM",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "values": [
+            "UNPAID",
+            "PAID"
+          ]
         },
         {
           "id": "-_zEAks1Md5GmfGJL4Bqw",
           "name": "notes",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
@@ -2233,7 +2345,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -2245,7 +2357,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2257,7 +2369,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2269,7 +2381,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2281,7 +2393,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2293,7 +2405,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2301,26 +2413,39 @@
         {
           "id": "QpB_lc1winrBq4cLA6vlt",
           "name": "financial_component",
-          "type": "VARCHAR",
+          "type": "ENUM",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "values": [
+            "KAS",
+            "PIUTANG",
+            "UTANG_GAJI",
+            "UTANG_MAINTENANCE",
+            "BEBAN_MAINTENANCE",
+            "BEBAN_GAJI",
+            "PENDAPATAN_OPERASIONAL"
+          ]
         },
         {
           "id": "2vxTVxT2Zju-AR89_J_ZD",
           "name": "entry_type",
-          "type": "VARCHAR",
+          "type": "ENUM",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "values": [
+            "KREDIT",
+            "DEBIT"
+          ]
         },
         {
           "id": "xdw1xpPqhaCMDt_TbXI4u",
@@ -2329,7 +2454,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2337,8 +2462,8 @@
       ],
       "indices": [],
       "id": "gFwNZxeMwaplL2dnZUlxR",
-      "x": 1236.2365284910245,
-      "y": 1777.981936181629
+      "x": 1209.207063197668,
+      "y": 1664.949711987108
     },
     {
       "id": "yNDcN_B7pavpT4eW0G350",
@@ -2349,7 +2474,7 @@
       "fields": [
         {
           "name": "report_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": true,
@@ -2363,12 +2488,12 @@
         {
           "id": "eXwIKU1kWSa-iq6NSKZuT",
           "name": "account_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -2381,7 +2506,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -2394,7 +2519,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "values": [
@@ -2409,12 +2534,12 @@
         {
           "id": "qyZACPb8TSrSGE-VpFWFq",
           "name": "user_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -2422,12 +2547,12 @@
         {
           "id": "7A4q8TjOChQbo6Ba2iMnM",
           "name": "title",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -2435,12 +2560,12 @@
         {
           "id": "082yzoRPCF9FkcXRESmC6",
           "name": "description",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -2453,7 +2578,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": "",
@@ -2522,39 +2647,6 @@
       "id": 4
     },
     {
-      "startTableId": "1lIumiUVggXTL2fKJG5DO",
-      "startFieldId": "ZwyVRQadCA7ksC0x30IAT",
-      "endTableId": "O-F8g9kq8Oc1yuAlNrW_A",
-      "endFieldId": "PfykJR8B4B7KUVKvGbb6g",
-      "cardinality": "many_to_one",
-      "updateConstraint": "No action",
-      "deleteConstraint": "No action",
-      "name": "fk_master_trip_payment_account_uuid_account",
-      "id": 6
-    },
-    {
-      "startTableId": "1mDxCYHEE3SAtfbev3xTl",
-      "startFieldId": "_WqdE1M3ceTGJ8o6KUzu9",
-      "endTableId": "O-F8g9kq8Oc1yuAlNrW_A",
-      "endFieldId": "PfykJR8B4B7KUVKvGbb6g",
-      "cardinality": "many_to_one",
-      "updateConstraint": "No action",
-      "deleteConstraint": "No action",
-      "name": "fk_vehicle_account_uuid_account",
-      "id": 8
-    },
-    {
-      "startTableId": "EKafqEOHSRV5nf3NthS48",
-      "startFieldId": "eZffisF8-K_YTdtNFbFmp",
-      "endTableId": "O-F8g9kq8Oc1yuAlNrW_A",
-      "endFieldId": "PfykJR8B4B7KUVKvGbb6g",
-      "cardinality": "many_to_one",
-      "updateConstraint": "No action",
-      "deleteConstraint": "No action",
-      "name": "fk_vehicle_maintenance_account_uuid_account",
-      "id": 9
-    },
-    {
       "startTableId": "1mDxCYHEE3SAtfbev3xTl",
       "startFieldId": "-14aY-_5TvADw-5JtxVXo",
       "endTableId": "hu3y_rYUguheIkSaiLnps",
@@ -2608,17 +2700,6 @@
       "deleteConstraint": "No action",
       "name": "fk_trip_payment_driver_trip_load_uuid_trip_load",
       "id": "Oinbm8Q49u7LcPty0ArxP"
-    },
-    {
-      "startTableId": "kLFLzkeIMcIdKOSqWh7ZC",
-      "startFieldId": "ya9Hgaywdz35JVsUKpdvA",
-      "endTableId": "O-F8g9kq8Oc1yuAlNrW_A",
-      "endFieldId": "PfykJR8B4B7KUVKvGbb6g",
-      "cardinality": "many_to_one",
-      "updateConstraint": "No action",
-      "deleteConstraint": "No action",
-      "name": "fk_trip_account_uuid_account",
-      "id": "U6iY_tTihVJ-pjkQldxIj"
     },
     {
       "startTableId": "q6yGHDBI_-OWa7jw-NJrh",
@@ -2685,6 +2766,17 @@
       "deleteConstraint": "No action",
       "name": "fk_report_trip_uuid_trip",
       "id": "SFjko6RjmhD9HJnzUop7u"
+    },
+    {
+      "startTableId": "kLFLzkeIMcIdKOSqWh7ZC",
+      "startFieldId": "EMlHO5d__Dvmw8ZVwuwOs",
+      "endTableId": "MS85ja6qIIQq-KlLmC1E9",
+      "endFieldId": "ua-Mi14-VKXURJaXT67Ez",
+      "cardinality": "many_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_trip_user_uuid_user_account",
+      "id": "IUw2qE_prmjo2RBbNyPEp"
     }
   ],
   "notes": [],
@@ -2722,8 +2814,8 @@
     {
       "id": 3,
       "name": "Management Trip",
-      "x": 1130.6069883003352,
-      "y": 431.68264657008353,
+      "x": 1118.699896341738,
+      "y": 415.0078523242969,
       "width": 958.9657961163771,
       "height": 1186.8126350120287,
       "color": "#175e7a",
