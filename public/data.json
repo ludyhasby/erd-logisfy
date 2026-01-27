@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-01-27T06:44:15.978Z",
+  "exported": "2026-01-27T09:05:28.766Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -1849,6 +1849,45 @@
           "primary": false,
           "default": "",
           "check": ""
+        },
+        {
+          "id": "Z0tq51w6iA4SOpXBvQe8J",
+          "name": "agent",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "HNGD7a6k7tpZ1EtTXKg3Q",
+          "name": "vendor",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "pIJ26lZTTuyUArxImCihz",
+          "name": "customer",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
         }
       ],
       "indices": [],
@@ -2101,20 +2140,21 @@
           "check": ""
         },
         {
-          "id": "2pqRBO01Ua9lK0Q4pWVIs",
-          "name": "account_uuid",
+          "id": "T6DpZxyhGJT-7aXFKrSN8",
+          "name": "trip_load_uuid",
           "type": "VARCHAR",
-          "comment": "",
-          "unique": false,
-          "increment": false,
-          "notNull": true,
-          "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
         },
         {
-          "id": "1hp6IWOPL4v8WzAINiPlf",
-          "name": "trip_uuid",
+          "id": "2pqRBO01Ua9lK0Q4pWVIs",
+          "name": "account_uuid",
           "type": "VARCHAR",
           "comment": "",
           "unique": false,
@@ -2908,17 +2948,6 @@
       "id": "SFjko6RjmhD9HJnzUop7u"
     },
     {
-      "startTableId": "U4yCYQXzCc5Wwk4cYoQcL",
-      "startFieldId": "VbrHJiAZSiIp3z--qnDFG",
-      "endTableId": "7JkjEK6q3QVDglix8xvrz",
-      "endFieldId": "1hp6IWOPL4v8WzAINiPlf",
-      "cardinality": "one_to_many",
-      "updateConstraint": "No action",
-      "deleteConstraint": "No action",
-      "name": "fk_trip_load_trip_load_uuid_trip_payment_driver",
-      "id": "E2T4U9arNtlB0BwywE7L9"
-    },
-    {
       "startTableId": "ss01YAj9zl1nRFplo1LMD",
       "startFieldId": "oIdZ2AV-yHePHYRX1Sv-6",
       "endTableId": "U4yCYQXzCc5Wwk4cYoQcL",
@@ -2939,6 +2968,17 @@
       "deleteConstraint": "No action",
       "name": "fk_trip_history_trip_uuid_trip",
       "id": "lrgqLUQk0xg0V6EcjIOFF"
+    },
+    {
+      "startTableId": "7JkjEK6q3QVDglix8xvrz",
+      "startFieldId": "T6DpZxyhGJT-7aXFKrSN8",
+      "endTableId": "U4yCYQXzCc5Wwk4cYoQcL",
+      "endFieldId": "VbrHJiAZSiIp3z--qnDFG",
+      "cardinality": "many_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_trip_payment_driver_trip_load_uuid_trip_load",
+      "id": "GRoK3zNt78dE9LceI-8Ct"
     }
   ],
   "notes": [],
@@ -2987,10 +3027,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.5050679529955183,
+    "zoom": 0.2953027716977618,
     "pan": {
-      "x": 1951.0886671565559,
-      "y": 1134.5833041161923
+      "x": 1533.3646799500248,
+      "y": 1108.663338901849
     }
   }
 }
