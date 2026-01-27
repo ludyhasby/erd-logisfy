@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-01-26T03:43:35.834Z",
+  "exported": "2026-01-27T06:44:15.978Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -16,7 +16,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -28,7 +28,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -40,7 +40,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -52,7 +52,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -64,7 +64,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -76,7 +76,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -88,7 +88,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -100,7 +100,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -123,7 +123,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -135,7 +135,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -147,7 +147,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -159,7 +159,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -171,7 +171,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -183,7 +183,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -195,7 +195,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -207,7 +207,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -219,7 +219,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -231,7 +231,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -254,7 +254,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -266,7 +266,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -278,7 +278,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -290,7 +290,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -302,7 +302,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -314,7 +314,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -326,7 +326,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -338,7 +338,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -350,7 +350,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -362,7 +362,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -385,7 +385,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -397,7 +397,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -409,7 +409,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -421,7 +421,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -433,7 +433,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -445,7 +445,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -457,7 +457,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -481,7 +481,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -493,7 +493,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -505,7 +505,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -517,7 +517,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -529,7 +529,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -541,7 +541,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -553,7 +553,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -565,7 +565,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -577,7 +577,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -589,7 +589,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -601,7 +601,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -613,7 +613,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -625,7 +625,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -637,7 +637,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -660,7 +660,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -672,7 +672,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -684,7 +684,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -696,7 +696,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -708,7 +708,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -720,7 +720,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -732,7 +732,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -744,7 +744,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -767,7 +767,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -779,7 +779,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -791,7 +791,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -803,7 +803,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -815,7 +815,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -827,7 +827,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -839,7 +839,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -851,7 +851,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -863,7 +863,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -875,7 +875,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -887,7 +887,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -899,7 +899,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -911,7 +911,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -923,7 +923,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -946,7 +946,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -958,7 +958,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -970,7 +970,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -982,7 +982,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -994,7 +994,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1006,7 +1006,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1018,7 +1018,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1030,7 +1030,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1042,7 +1042,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1054,7 +1054,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1066,7 +1066,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1078,7 +1078,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1090,7 +1090,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1129,7 +1129,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -1142,7 +1142,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -1155,7 +1155,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -1168,7 +1168,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -1181,7 +1181,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -1194,7 +1194,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "values": [
@@ -1212,7 +1212,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": "",
@@ -1226,7 +1226,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": "",
@@ -1253,7 +1253,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "values": [
@@ -1509,7 +1509,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -1521,10 +1521,23 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
+        },
+        {
+          "id": "45COhyw80ImanBylMFv4C",
+          "name": "user_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
         },
         {
           "id": "d3jDc5sNNGpIX05LLxBZB",
@@ -1533,7 +1546,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1545,7 +1558,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1557,7 +1570,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1569,7 +1582,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1593,7 +1606,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1605,7 +1618,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1617,7 +1630,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1641,7 +1654,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1664,7 +1677,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -1676,7 +1689,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1688,7 +1701,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1700,7 +1713,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1712,7 +1725,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1724,7 +1737,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1736,7 +1749,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1748,7 +1761,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1760,31 +1773,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
-          "primary": false,
-          "default": "",
-          "check": ""
-        },
-        {
-          "id": "gV5LL5rBBJiXlYfoDbx9F",
-          "name": "load_date",
-          "type": "TIMESTAMP",
-          "comment": "",
-          "unique": false,
-          "increment": false,
-          "notNull": false,
-          "primary": false,
-          "default": "",
-          "check": ""
-        },
-        {
-          "id": "XEpSVAVOsDw34D9JKmXev",
-          "name": "unload_date",
-          "type": "TIMESTAMP",
-          "comment": "",
-          "unique": false,
-          "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1796,7 +1785,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1808,7 +1797,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1820,7 +1809,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1832,7 +1821,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1844,7 +1833,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1856,7 +1845,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1879,7 +1868,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -1891,7 +1880,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": "",
@@ -1904,7 +1893,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1916,7 +1905,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1928,7 +1917,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1940,7 +1929,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1952,7 +1941,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1964,7 +1953,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1976,7 +1965,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -1988,7 +1977,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2000,7 +1989,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2023,7 +2012,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -2035,7 +2024,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2047,7 +2036,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2059,7 +2048,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2071,7 +2060,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2083,7 +2072,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2106,7 +2095,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -2118,7 +2107,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2130,7 +2119,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2142,7 +2131,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2154,7 +2143,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2166,7 +2155,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2178,7 +2167,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2190,7 +2179,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2202,7 +2191,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2210,8 +2199,8 @@
       ],
       "indices": [],
       "id": "7JkjEK6q3QVDglix8xvrz",
-      "x": 1512.115353780313,
-      "y": 965.2085306587826
+      "x": 1514.721744254898,
+      "y": 962.6021898941171
     },
     {
       "name": "transaction_log",
@@ -2225,7 +2214,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": true,
           "default": "",
           "check": ""
@@ -2237,7 +2226,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2249,7 +2238,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2261,7 +2250,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2273,7 +2262,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2285,7 +2274,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2297,7 +2286,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2309,7 +2298,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2321,7 +2310,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
@@ -2329,8 +2318,8 @@
       ],
       "indices": [],
       "id": "gFwNZxeMwaplL2dnZUlxR",
-      "x": 825.1650154645588,
-      "y": 1505.1913794406823
+      "x": 826.4681112820133,
+      "y": 1459.5823298909136
     },
     {
       "id": "yNDcN_B7pavpT4eW0G350",
@@ -2432,7 +2421,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -2463,6 +2452,244 @@
           "increment": false,
           "comment": "",
           "size": ""
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "7IrymAWJCALSbh2YYqFzo",
+      "name": "trip_history",
+      "x": 1525.7795645866381,
+      "y": 1474.84250159181,
+      "locked": false,
+      "fields": [
+        {
+          "name": "trip_history_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "V802LpijU5Eb5FOY3F5O1",
+          "size": ""
+        },
+        {
+          "id": "oIdZ2AV-yHePHYRX1Sv-6",
+          "name": "trip_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "LJSPUqgf9NJu7eU04nNyw",
+          "name": "prev_status",
+          "type": "ENUM",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "values": []
+        },
+        {
+          "id": "cJ2JapbnmeLgV-VnxfggP",
+          "name": "new_status",
+          "type": "ENUM",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "values": []
+        },
+        {
+          "id": "bFSRAF6eonu3Wlyw83_U1",
+          "name": "account_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "MIXMOaVyBBe0eO1SGMp9J",
+          "name": "created_at",
+          "type": "TIMESTAMP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "7XgHw5dry76PQG9EQ2pag",
+          "name": "updated_at",
+          "type": "TIMESTAMP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "L9K68zg3dAKeSVJUFAfOc",
+          "name": "deleted_at",
+          "type": "TIMESTAMP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "ss01YAj9zl1nRFplo1LMD",
+      "name": "trip_load_history",
+      "x": 1180.907267608329,
+      "y": 1475.2958654903189,
+      "locked": false,
+      "fields": [
+        {
+          "name": "trip_load_history_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "V802LpijU5Eb5FOY3F5O1",
+          "size": ""
+        },
+        {
+          "id": "oIdZ2AV-yHePHYRX1Sv-6",
+          "name": "trip_load_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "LJSPUqgf9NJu7eU04nNyw",
+          "name": "prev_status",
+          "type": "ENUM",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "values": []
+        },
+        {
+          "id": "cJ2JapbnmeLgV-VnxfggP",
+          "name": "new_status",
+          "type": "ENUM",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "values": []
+        },
+        {
+          "id": "bFSRAF6eonu3Wlyw83_U1",
+          "name": "account_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "MIXMOaVyBBe0eO1SGMp9J",
+          "name": "created_at",
+          "type": "TIMESTAMP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "7XgHw5dry76PQG9EQ2pag",
+          "name": "updated_at",
+          "type": "TIMESTAMP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "L9K68zg3dAKeSVJUFAfOc",
+          "name": "deleted_at",
+          "type": "TIMESTAMP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
         }
       ],
       "comment": "",
@@ -2690,6 +2917,28 @@
       "deleteConstraint": "No action",
       "name": "fk_trip_load_trip_load_uuid_trip_payment_driver",
       "id": "E2T4U9arNtlB0BwywE7L9"
+    },
+    {
+      "startTableId": "ss01YAj9zl1nRFplo1LMD",
+      "startFieldId": "oIdZ2AV-yHePHYRX1Sv-6",
+      "endTableId": "U4yCYQXzCc5Wwk4cYoQcL",
+      "endFieldId": "VbrHJiAZSiIp3z--qnDFG",
+      "cardinality": "many_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_trip_load_history_trip_load_uuid_trip_load",
+      "id": "lvLoHqTJEJ9F1Stn9hBcx"
+    },
+    {
+      "startTableId": "7IrymAWJCALSbh2YYqFzo",
+      "startFieldId": "oIdZ2AV-yHePHYRX1Sv-6",
+      "endTableId": "kLFLzkeIMcIdKOSqWh7ZC",
+      "endFieldId": "yYlvHtY1jbEgAsuTsloCQ",
+      "cardinality": "many_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_trip_history_trip_uuid_trip",
+      "id": "lrgqLUQk0xg0V6EcjIOFF"
     }
   ],
   "notes": [],
@@ -2729,8 +2978,8 @@
       "name": "Management Trip",
       "x": 1130.6069883003352,
       "y": 429.1683709863926,
-      "width": 958.9657961163771,
-      "height": 1186.8126350120287,
+      "width": 972.1355355464157,
+      "height": 1610.6406836651822,
       "color": "#175e7a",
       "locked": false
     }
@@ -2738,10 +2987,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.5303213506452944,
+    "zoom": 0.5050679529955183,
     "pan": {
-      "x": 1571.3666404088212,
-      "y": -421.78127161446656
+      "x": 1951.0886671565559,
+      "y": 1134.5833041161923
     }
   }
 }
