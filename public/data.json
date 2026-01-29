@@ -1,8 +1,4 @@
 {
-  "version": "1.0",
-  "exported": "2026-01-29T09:55:54.298Z",
-  "database": "generic",
-  "title": "logisfy_erd",
   "tables": [
     {
       "name": "account",
@@ -645,115 +641,8 @@
       ],
       "indices": [],
       "id": "UP0ptZO4G1xpiKOB-Bo1A",
-      "x": 1813.0434290479682,
-      "y": 850.4030843667621
-    },
-    {
-      "name": "master_trip_payment",
-      "comment": "",
-      "color": "#175e7a",
-      "fields": [
-        {
-          "id": "Xr0FPGs5i_piLV7jmAg8j",
-          "name": "master_trip_payment_uuid",
-          "type": "TEXT",
-          "comment": "",
-          "unique": false,
-          "increment": false,
-          "notNull": true,
-          "primary": true,
-          "default": "",
-          "check": ""
-        },
-        {
-          "id": "ln8WgycPOyd2d4bPIUuoD",
-          "name": "master_vendor_agent_uuid",
-          "type": "TEXT",
-          "comment": "",
-          "unique": false,
-          "increment": false,
-          "notNull": true,
-          "primary": false,
-          "default": "",
-          "check": ""
-        },
-        {
-          "id": "JJbQsX6AAWwmkT19FOly5",
-          "name": "cost",
-          "type": "JSON",
-          "comment": "",
-          "unique": false,
-          "increment": false,
-          "notNull": true,
-          "primary": false,
-          "default": "",
-          "check": ""
-        },
-        {
-          "id": "DIYB5wyA2ZmKEp3qczfCp",
-          "name": "accrued_salaries",
-          "type": "NUMERIC",
-          "comment": "",
-          "unique": false,
-          "increment": false,
-          "notNull": true,
-          "primary": false,
-          "default": "",
-          "check": ""
-        },
-        {
-          "id": "ZwyVRQadCA7ksC0x30IAT",
-          "name": "account_uuid",
-          "type": "TEXT",
-          "comment": "",
-          "unique": false,
-          "increment": false,
-          "notNull": true,
-          "primary": false,
-          "default": "",
-          "check": ""
-        },
-        {
-          "id": "LqXVbs59W2Wej-yHfEGAo",
-          "name": "created_at",
-          "type": "TIMESTAMP",
-          "comment": "",
-          "unique": false,
-          "increment": false,
-          "notNull": true,
-          "primary": false,
-          "default": "",
-          "check": ""
-        },
-        {
-          "id": "Uz5I5jxsC84llEp9_8cTm",
-          "name": "updated_at",
-          "type": "TIMESTAMP",
-          "comment": "",
-          "unique": false,
-          "increment": false,
-          "notNull": true,
-          "primary": false,
-          "default": "",
-          "check": ""
-        },
-        {
-          "id": "GIkhcZ0f6l28xoTAKd-hC",
-          "name": "deleted_at",
-          "type": "TIMESTAMP",
-          "comment": "",
-          "unique": false,
-          "increment": false,
-          "notNull": true,
-          "primary": false,
-          "default": "",
-          "check": ""
-        }
-      ],
-      "indices": [],
-      "id": "1lIumiUVggXTL2fKJG5DO",
-      "x": 1808.275027436768,
-      "y": 480.82495933086955
+      "x": 1824.6140292253117,
+      "y": 486.76547212412197
     },
     {
       "name": "vehicle",
@@ -2865,28 +2754,6 @@
       "id": 3
     },
     {
-      "startTableId": "UP0ptZO4G1xpiKOB-Bo1A",
-      "startFieldId": "l2PtsRICmuZ0eoWXrbn6C",
-      "endTableId": "1lIumiUVggXTL2fKJG5DO",
-      "endFieldId": "ln8WgycPOyd2d4bPIUuoD",
-      "cardinality": "one_to_many",
-      "updateConstraint": "No action",
-      "deleteConstraint": "No action",
-      "name": "fk_master_vendor_agent_master_vendor_agent_uuid_master_trip_payment",
-      "id": 4
-    },
-    {
-      "startTableId": "1lIumiUVggXTL2fKJG5DO",
-      "startFieldId": "ZwyVRQadCA7ksC0x30IAT",
-      "endTableId": "O-F8g9kq8Oc1yuAlNrW_A",
-      "endFieldId": "PfykJR8B4B7KUVKvGbb6g",
-      "cardinality": "many_to_one",
-      "updateConstraint": "No action",
-      "deleteConstraint": "No action",
-      "name": "fk_master_trip_payment_account_uuid_account",
-      "id": 6
-    },
-    {
       "startTableId": "1mDxCYHEE3SAtfbev3xTl",
       "startFieldId": "_WqdE1M3ceTGJ8o6KUzu9",
       "endTableId": "O-F8g9kq8Oc1yuAlNrW_A",
@@ -3075,7 +2942,7 @@
     }
   ],
   "notes": [],
-  "areas": [
+  "subjectAreas": [
     {
       "id": 0,
       "name": "Management Account",
@@ -3117,13 +2984,7 @@
       "locked": false
     }
   ],
+  "database": "generic",
   "types": [],
-  "enums": [],
-  "transform": {
-    "zoom": 0.3255713057967823,
-    "pan": {
-      "x": 1767.9341902836823,
-      "y": 1573.9901679702434
-    }
-  }
+  "title": "logisfy_erd"
 }
