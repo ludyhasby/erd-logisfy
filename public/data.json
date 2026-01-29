@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-01-27T09:05:28.766Z",
+  "exported": "2026-01-29T09:55:54.298Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -2278,7 +2278,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": true,
+          "notNull": false,
           "primary": false,
           "default": "",
           "check": ""
@@ -2290,7 +2290,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": true,
+          "notNull": false,
           "primary": false,
           "default": "",
           "check": ""
@@ -2302,7 +2302,7 @@
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": true,
+          "notNull": false,
           "primary": false,
           "default": "",
           "check": ""
@@ -2321,7 +2321,7 @@
         },
         {
           "id": "QpB_lc1winrBq4cLA6vlt",
-          "name": "financial_component",
+          "name": "financial_account_code",
           "type": "VARCHAR",
           "comment": "",
           "unique": false,
@@ -2735,6 +2735,88 @@
       "comment": "",
       "indices": [],
       "color": "#175e7a"
+    },
+    {
+      "id": "LCvnVpDILwLcWATHxH-ia",
+      "name": "financial_account",
+      "x": 465.11324319795744,
+      "y": 1465.2826399739595,
+      "locked": false,
+      "fields": [
+        {
+          "name": "financial_account_code",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "Xti6VVUN083NiGXhW2yMn",
+          "size": ""
+        },
+        {
+          "id": "LAcMlQdTDNMbG0ROWAFzT",
+          "name": "account_name",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "2BQ8ESkiVCB8PqhaaK0xa",
+          "name": "account_type",
+          "type": "ENUM",
+          "default": "ASSET",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "values": [
+            "ASSET",
+            "LIABILITY",
+            "EQUITY",
+            "REVENUE",
+            "EXPENSE"
+          ]
+        },
+        {
+          "id": "Wfl9giyE2m8lxH3NH2rKn",
+          "name": "account_category",
+          "type": "ENUM",
+          "default": "CURRENT_ASSET",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "values": [
+            "CURRENT_ASSET",
+            "FIXED_ASSET",
+            "ACCUMULATED_DEPRECIATION",
+            "CURRENT_LIABILITY",
+            "LONG_TERM_LIABILITY",
+            "EQUITY",
+            "OPERATING_REVENUE",
+            "OTHER_REVENUE",
+            "DIRECT_EXPENSE",
+            "OPERATIONAL_EXPENSE",
+            "GENERAL_EXPENSE"
+          ]
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
     }
   ],
   "relationships": [
@@ -2979,6 +3061,17 @@
       "deleteConstraint": "No action",
       "name": "fk_trip_payment_driver_trip_load_uuid_trip_load",
       "id": "GRoK3zNt78dE9LceI-8Ct"
+    },
+    {
+      "startTableId": "LCvnVpDILwLcWATHxH-ia",
+      "startFieldId": "Xti6VVUN083NiGXhW2yMn",
+      "endTableId": "gFwNZxeMwaplL2dnZUlxR",
+      "endFieldId": "QpB_lc1winrBq4cLA6vlt",
+      "cardinality": "one_to_many",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_financial_account_financial_account_code_transaction_log",
+      "id": "Qxfkgq0-dzYQVBNXX-e4v"
     }
   ],
   "notes": [],
@@ -3016,8 +3109,8 @@
     {
       "id": 3,
       "name": "Management Trip",
-      "x": 1130.6069883003352,
-      "y": 429.1683709863926,
+      "x": 1093.3751111168508,
+      "y": 452.9554194123232,
       "width": 972.1355355464157,
       "height": 1610.6406836651822,
       "color": "#175e7a",
@@ -3027,10 +3120,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.2953027716977618,
+    "zoom": 0.3255713057967823,
     "pan": {
-      "x": 1533.3646799500248,
-      "y": 1108.663338901849
+      "x": 1767.9341902836823,
+      "y": 1573.9901679702434
     }
   }
 }
