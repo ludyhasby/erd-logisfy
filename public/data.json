@@ -235,7 +235,7 @@
       ],
       "indices": [],
       "id": "hu3y_rYUguheIkSaiLnps",
-      "x": 1859.4505361714455,
+      "x": 1862.4053568822997,
       "y": -122.55880927202185
     },
     {
@@ -983,6 +983,34 @@
           "primary": false,
           "default": "",
           "check": ""
+        },
+        {
+          "id": "3vM41dRLwHbEpCzMEXu2c",
+          "name": "last_maintenance",
+          "type": "DATE",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "UjKQH_RytzwDWR7z4J4Y6",
+          "name": "next_maintenance",
+          "type": "DATE",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
         }
       ],
       "indices": [],
