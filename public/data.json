@@ -1,4 +1,8 @@
 {
+  "version": "1.0",
+  "exported": "2026-02-02T03:50:51.543Z",
+  "database": "generic",
+  "title": "logisfy_erd",
   "tables": [
     {
       "name": "account",
@@ -115,14 +119,15 @@
         {
           "id": "Fwvom9yJcID7ZIcQBMh9u",
           "name": "user_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": true,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": ""
         },
         {
           "id": "tMjYSLVIlZL9_j2Gsv2r1",
@@ -377,14 +382,15 @@
         {
           "id": "ua-Mi14-VKXURJaXT67Ez",
           "name": "user_account_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": true,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": ""
         },
         {
           "id": "i-iNcrZ0Ki4nGvG2jNzjH",
@@ -401,14 +407,15 @@
         {
           "id": "9HzJCyMhyd__4a4V_vzoc",
           "name": "user_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": ""
         },
         {
           "id": "6IArCB3MZtESVl8il3kYN",
@@ -1469,18 +1476,6 @@
           "check": ""
         },
         {
-          "id": "q8j3xi_46dv6WA7_WpJiZ",
-          "name": "trip_uuid",
-          "type": "VARCHAR",
-          "comment": "",
-          "unique": false,
-          "increment": false,
-          "notNull": true,
-          "primary": false,
-          "default": "",
-          "check": ""
-        },
-        {
           "id": "KdrERLrmcgffBEkq5lkuT",
           "name": "trip_load_uuid",
           "type": "VARCHAR",
@@ -2313,7 +2308,7 @@
         },
         {
           "id": "Xjk1iqfZwkBmyYVUrqmUr",
-          "name": "trip_uuid",
+          "name": "trip_load_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -2734,6 +2729,147 @@
       "comment": "",
       "indices": [],
       "color": "#175e7a"
+    },
+    {
+      "id": "X2peNj3-JUAbua89D_Bal",
+      "name": "user_driver",
+      "x": 1154.9681416503072,
+      "y": -510.262430912896,
+      "locked": false,
+      "fields": [
+        {
+          "name": "user_driver_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "-5BxVp-tKsPQTQCEvle9_",
+          "size": ""
+        },
+        {
+          "id": "dNpY3NNyrXDtwyGZsX4f7",
+          "name": "user_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "de_ai7ldNH2TAlUluGfEu",
+          "name": "address",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "xuL2nJ3HNFrLW4u5xDUYY",
+          "name": "bank_name",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "e2JZL2-4dsSbDpy7v0h1g",
+          "name": "account_number",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "fSWhX90RfaJdaHgfILHc_",
+          "name": "account_name",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "3dtdS760RGrkrytBtXkBK",
+          "name": "driver_license",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "f3yfBBAeYLsTcuV0_z6s8",
+          "name": "total_accrued_salaries",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "anF15JJ9HXFa32CnQwINt",
+          "name": "phone_number",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "eVpRHG7tjqxi2wE6OwZLJ",
+          "name": "driver_image",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
     }
   ],
   "relationships": [
@@ -2892,17 +3028,6 @@
       "id": "TcEX98Rg-OQDI9PORXSvv"
     },
     {
-      "startTableId": "hkv2xEaWI161oVUlxK8it",
-      "startFieldId": "q8j3xi_46dv6WA7_WpJiZ",
-      "endTableId": "kLFLzkeIMcIdKOSqWh7ZC",
-      "endFieldId": "yYlvHtY1jbEgAsuTsloCQ",
-      "cardinality": "many_to_one",
-      "updateConstraint": "No action",
-      "deleteConstraint": "No action",
-      "name": "fk_reimbursement_trip_uuid_trip",
-      "id": "YxqgZ5l2xWErDBjVjoRIe"
-    },
-    {
       "startTableId": "Ksr56UUyiKc6bC05Dzzvx",
       "startFieldId": "DSrRWUh2wcQEJyGWnvO6V",
       "endTableId": "U4yCYQXzCc5Wwk4cYoQcL",
@@ -2912,17 +3037,6 @@
       "deleteConstraint": "No action",
       "name": "fk_trip_log_payment_trip_load_uuid_trip_load",
       "id": "BohTboKEdWmCtvnpMwW0r"
-    },
-    {
-      "startTableId": "yNDcN_B7pavpT4eW0G350",
-      "startFieldId": "Xjk1iqfZwkBmyYVUrqmUr",
-      "endTableId": "kLFLzkeIMcIdKOSqWh7ZC",
-      "endFieldId": "yYlvHtY1jbEgAsuTsloCQ",
-      "cardinality": "many_to_one",
-      "updateConstraint": "No action",
-      "deleteConstraint": "No action",
-      "name": "fk_report_trip_uuid_trip",
-      "id": "SFjko6RjmhD9HJnzUop7u"
     },
     {
       "startTableId": "ss01YAj9zl1nRFplo1LMD",
@@ -2967,18 +3081,40 @@
       "deleteConstraint": "No action",
       "name": "fk_financial_account_financial_account_code_transaction_log",
       "id": "Qxfkgq0-dzYQVBNXX-e4v"
+    },
+    {
+      "startTableId": "yNDcN_B7pavpT4eW0G350",
+      "startFieldId": "Xjk1iqfZwkBmyYVUrqmUr",
+      "endTableId": "U4yCYQXzCc5Wwk4cYoQcL",
+      "endFieldId": "VbrHJiAZSiIp3z--qnDFG",
+      "cardinality": "many_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_report_trip_load_uuid_trip_load",
+      "id": "siLluDb0O22bLYcWgufr8"
+    },
+    {
+      "startTableId": "X2peNj3-JUAbua89D_Bal",
+      "startFieldId": "dNpY3NNyrXDtwyGZsX4f7",
+      "endTableId": "hu3y_rYUguheIkSaiLnps",
+      "endFieldId": "Fwvom9yJcID7ZIcQBMh9u",
+      "cardinality": "many_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_user_driver_user_uuid_users",
+      "id": "xXjBQ-oD3gbcR_4XuGmY5"
     }
   ],
   "notes": [],
-  "subjectAreas": [
+  "areas": [
     {
       "id": 0,
       "name": "Management Account",
-      "x": 1357.3087470096043,
+      "x": 1118.1515529417056,
       "y": -565.5998098430471,
-      "width": 776.9995766416887,
-      "height": 913.4220819738189,
-      "color": "#175e7a",
+      "width": 1016.1567707095874,
+      "height": 908.3698211423023,
+      "color": "#b1f0cd",
       "locked": true
     },
     {
@@ -3012,7 +3148,13 @@
       "locked": false
     }
   ],
-  "database": "generic",
   "types": [],
-  "title": "logisfy_erd"
+  "enums": [],
+  "transform": {
+    "zoom": 0.22035947491034086,
+    "pan": {
+      "x": 1818.3313321661785,
+      "y": 357.28498394085227
+    }
+  }
 }
