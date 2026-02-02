@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-02-02T06:20:13.904Z",
+  "exported": "2026-02-02T11:39:51.554Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -659,38 +659,41 @@
         {
           "id": "hKNJXpqW-_36fR-3d3efS",
           "name": "vehicle_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": true,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": ""
         },
         {
           "id": "_WqdE1M3ceTGJ8o6KUzu9",
           "name": "account_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": ""
         },
         {
           "id": "-14aY-_5TvADw-5JtxVXo",
           "name": "user_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": ""
         },
         {
           "id": "3YSGBzV1kj3VwTBBeg4Bt",
@@ -838,38 +841,41 @@
         {
           "id": "fj8tz63zzcRJnLxOUhgtc",
           "name": "vehicle_maintenance_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": true,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": ""
         },
         {
           "id": "eZffisF8-K_YTdtNFbFmp",
           "name": "account_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": ""
         },
         {
           "id": "XA1gGCHELoF2Zn3AbiK-F",
           "name": "vehicle_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": ""
         },
         {
           "id": "VqouyXBIy31lxrflv-du4",
@@ -1034,7 +1040,7 @@
       "fields": [
         {
           "name": "vehicle_expense_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": true,
@@ -1048,7 +1054,7 @@
         {
           "id": "vjjtAocvtuW7aSsJca5fh",
           "name": "account_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
@@ -1061,7 +1067,7 @@
         {
           "id": "SO5EVzWJQQ8OgF2U_DTGP",
           "name": "user_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
@@ -1074,7 +1080,7 @@
         {
           "id": "wuPhQ-BpH9IH1r6mOM6p3",
           "name": "vehicle_maintenance_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
@@ -1087,7 +1093,7 @@
         {
           "id": "jZ3pyrxABO6dFuY_0Bu4B",
           "name": "vehicle_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
@@ -1145,7 +1151,7 @@
         {
           "id": "XtIfFYk2Pny1O7IbSLNKD",
           "name": "expense_date",
-          "type": "DATETIME",
+          "type": "DATE",
           "default": "",
           "check": "",
           "primary": false,
@@ -1179,7 +1185,7 @@
           "unique": false,
           "notNull": true,
           "increment": false,
-          "comment": "",
+          "comment": "PRIMARY, DRIVER",
           "values": [
             "PRIMARY",
             "DRIVER"
@@ -3164,10 +3170,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.7462153966366275,
+    "zoom": 0.48101709809097,
     "pan": {
-      "x": 1584.9032892311318,
-      "y": -157.4027450800757
+      "x": 1234.9941180410315,
+      "y": 786.8888732837041
     }
   }
 }
