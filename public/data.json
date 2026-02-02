@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-02-02T03:50:51.543Z",
+  "exported": "2026-02-02T06:20:13.904Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -371,8 +371,8 @@
       ],
       "indices": [],
       "id": "pTc8hRlAPcpAadDLYlQN1",
-      "x": 1402.4389764787397,
-      "y": -115.08163817476952
+      "x": 1480.2689885148293,
+      "y": -141.6146152262138
     },
     {
       "name": "user_account",
@@ -468,8 +468,8 @@
       ],
       "indices": [],
       "id": "MS85ja6qIIQq-KlLmC1E9",
-      "x": 1415.9567223977547,
-      "y": -505.10374595706617,
+      "x": 1483.1735436132665,
+      "y": -503.33482683882323,
       "locked": false
     },
     {
@@ -1741,14 +1741,21 @@
         {
           "id": "1sB4iKAKI6yscNq1c8qLa",
           "name": "status",
-          "type": "VARCHAR",
-          "comment": "",
+          "type": "ENUM",
+          "comment": "PENDING,LOADING,ON_TRIP,COMPLETED,CANCELLED",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
-          "default": "",
-          "check": ""
+          "default": "ON_TRIP",
+          "check": "",
+          "values": [
+            "PENDING",
+            "LOADING",
+            "ON_TRIP",
+            "COMPLETED",
+            "CANCELLED"
+          ]
         },
         {
           "id": "nV-3MGU6Xzs8Qjjlrje6j",
@@ -1924,14 +1931,20 @@
         {
           "id": "QZSdORyLGQIT2zPE7n8Zn",
           "name": "status",
-          "type": "VARCHAR",
-          "comment": "",
+          "type": "ENUM",
+          "comment": "PLANNED, RUNNING, COMPLETED, CANCELLED",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
-          "default": "",
-          "check": ""
+          "default": "RUNNING",
+          "check": "",
+          "values": [
+            "PLANNED",
+            "RUNNING",
+            "COMPLETED",
+            "CANCELLED"
+          ]
         },
         {
           "id": "EtsjT3K1ytZKTp5e6pmod",
@@ -3151,10 +3164,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.22035947491034086,
+    "zoom": 0.7462153966366275,
     "pan": {
-      "x": 1818.3313321661785,
-      "y": 357.28498394085227
+      "x": 1584.9032892311318,
+      "y": -157.4027450800757
     }
   }
 }
