@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-02-06T03:25:36.977Z",
+  "exported": "2026-02-06T07:54:42.121Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -1559,14 +1559,20 @@
         {
           "id": "KvlExnll04i1-bX9mtYmV",
           "name": "status",
-          "type": "VARCHAR",
-          "comment": "",
+          "type": "ENUM",
+          "comment": "SUBMITTED, APPROVED, REJECTED, PAID ",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
-          "default": "",
-          "check": ""
+          "default": "SUBMITTED",
+          "check": "",
+          "values": [
+            "SUBMITTED",
+            "APPROVED",
+            "REJECTED",
+            "PAID "
+          ]
         },
         {
           "id": "YsY1NhlFABIcvjbDB2ewM",
@@ -3185,10 +3191,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.31006791028265,
+    "zoom": 0.5303213506452945,
     "pan": {
-      "x": 2810.2373999710094,
-      "y": 193.22816118068747
+      "x": 1566.054668289055,
+      "y": 1231.3152790664333
     }
   }
 }
