@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-02-02T11:39:51.554Z",
+  "exported": "2026-02-06T03:25:36.977Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -1205,7 +1205,7 @@
       "fields": [
         {
           "name": "package_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": true,
@@ -1214,7 +1214,7 @@
           "increment": false,
           "comment": "",
           "id": "OrzAbHBs9y4Av0_QO8CM5",
-          "size": ""
+          "size": 255
         },
         {
           "id": "JQ5l4QraTKy5b3MWqD-aN",
@@ -1223,8 +1223,8 @@
           "default": "",
           "check": "",
           "primary": false,
-          "unique": false,
-          "notNull": false,
+          "unique": true,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -1233,13 +1233,13 @@
           "id": "1cVdkW_Z0yYgnGRoYzop_",
           "name": "for",
           "type": "ENUM",
-          "default": "",
+          "default": "TRANSPORTER",
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
-          "comment": "",
+          "comment": "TRANSPORTER, SHIPPER",
           "values": [
             "TRANSPORTER",
             "SHIPPER"
@@ -1248,15 +1248,14 @@
         {
           "id": "xsptmkkjQJIzW5WeKCeB9",
           "name": "price",
-          "type": "INT",
+          "type": "FLOAT",
           "default": "",
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
-          "size": "",
           "values": []
         },
         {
@@ -1267,7 +1266,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": "",
@@ -1277,16 +1276,16 @@
           "id": "W5adVuc-dF4DnfyZ9ky5O",
           "name": "status",
           "type": "ENUM",
-          "default": "",
+          "default": "ACTIVE",
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
-          "comment": "",
+          "comment": "ACTIVE, SUSPEND",
           "values": [
             "ACTIVE",
-            "DEACTIVETE"
+            "SUSPEND"
           ]
         },
         {
@@ -1297,7 +1296,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -1310,7 +1309,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": "",
@@ -1324,7 +1323,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": "",
@@ -1344,7 +1343,7 @@
       "fields": [
         {
           "name": "account_package_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": true,
@@ -1358,12 +1357,12 @@
         {
           "id": "Zl07RfjMITRMkQSmA_qei",
           "name": "account_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -1371,12 +1370,12 @@
         {
           "id": "xnhDKAMDed7wO4cL1uEOD",
           "name": "package_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -1389,7 +1388,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": "",
@@ -1403,7 +1402,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": "",
@@ -1417,10 +1416,26 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
+        },
+        {
+          "id": "hNPOeU1qri2iLi3ZdYryK",
+          "name": "status",
+          "type": "ENUM",
+          "default": "ACTIVE",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "ACTIVE, SUSPEND",
+          "values": [
+            "ACTIVE",
+            "SUSPEND"
+          ]
         }
       ],
       "comment": "",
@@ -3170,10 +3185,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.48101709809097,
+    "zoom": 0.31006791028265,
     "pan": {
-      "x": 1234.9941180410315,
-      "y": 786.8888732837041
+      "x": 2810.2373999710094,
+      "y": 193.22816118068747
     }
   }
 }
