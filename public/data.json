@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-02-06T07:54:42.121Z",
+  "exported": "2026-02-09T03:32:04.217Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -12,62 +12,70 @@
         {
           "id": "PfykJR8B4B7KUVKvGbb6g",
           "name": "account_uuid",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": true,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": ""
         },
         {
           "id": "-mNL2X9w4XkIli7icsQDD",
           "name": "email",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": ""
         },
         {
           "id": "IkictmUCLqDLsG85Mqell",
           "name": "company_name",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": ""
         },
         {
           "id": "EtZykon1zJdeaGOXGIMJh",
           "name": "business_role",
-          "type": "TEXT",
+          "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": ""
         },
         {
           "id": "3lBborzsmeLlZLURu4wO6",
           "name": "status",
-          "type": "TEXT",
-          "comment": "",
+          "type": "ENUM",
+          "comment": "TRANSPORTER, SHIPPER",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
-          "default": "",
-          "check": ""
+          "default": "TRANSPORTER",
+          "check": "",
+          "values": [
+            "TRANSPORTER",
+            "SHIPPER"
+          ]
         },
         {
           "id": "L_4q64x-CSwmJfG7EznNk",
@@ -420,14 +428,20 @@
         {
           "id": "6IArCB3MZtESVl8il3kYN",
           "name": "role",
-          "type": "TEXT",
-          "comment": "",
+          "type": "ENUM",
+          "comment": "ADMIN, OWNER, PARTNER, DRIVER",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
-          "default": "",
-          "check": ""
+          "default": "OWNER",
+          "check": "",
+          "values": [
+            "ADMIN",
+            "OWNER",
+            "PARTNER",
+            "DRIVER"
+          ]
         },
         {
           "id": "Vp0yTRB4MLx_RdXZtTOsn",
@@ -588,14 +602,18 @@
         {
           "id": "2hJ-uvooKfyXsHlKmHB3N",
           "name": "status",
-          "type": "TEXT",
-          "comment": "",
+          "type": "ENUM",
+          "comment": "ACTIVE, SUSPEND",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
-          "default": "",
-          "check": ""
+          "default": "ACTIVE",
+          "check": "",
+          "values": [
+            "ACTIVE",
+            "SUSPEND"
+          ]
         },
         {
           "id": "ewKJhRjjzAdIG0Wr3WRDV",
@@ -710,14 +728,23 @@
         {
           "id": "Szstc7qSqWvGaUZcBrjxw",
           "name": "type",
-          "type": "TEXT",
-          "comment": "",
+          "type": "ENUM",
+          "comment": "BLINDVAN, L300, CDE, CDD, REEFER, WINGBOX, TRAILER",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "values": [
+            "BLINDVAN",
+            "L300",
+            "CDE",
+            "CDD",
+            "REEFER",
+            "WINGBOX",
+            "TRAILER"
+          ]
         },
         {
           "id": "DfIpg3A7DCAqxwnDEOyEB",
@@ -770,14 +797,18 @@
         {
           "id": "rvqMSM4BrgHlCZK5VcjWF",
           "name": "owner_type",
-          "type": "TEXT",
-          "comment": "",
+          "type": "ENUM",
+          "comment": "OWN, PARTNER",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
-          "default": "",
-          "check": ""
+          "default": "OWN",
+          "check": "",
+          "values": [
+            "OWN",
+            "PARTNER"
+          ]
         },
         {
           "id": "pIxKI4m4qGQGbeD_PZ3xG",
@@ -892,14 +923,20 @@
         {
           "id": "jedSXU-YqaiT7Azm9mfib",
           "name": "schedule_type",
-          "type": "TEXT",
-          "comment": "",
+          "type": "ENUM",
+          "comment": "WEEKLY, MONTHLY, YEARLY, ONE_TIME",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
-          "default": "",
-          "check": ""
+          "default": "ONE_TIME",
+          "check": "",
+          "values": [
+            "WEEKLY",
+            "MONTHLY",
+            "YEARLY",
+            "ONE_TIME"
+          ]
         },
         {
           "id": "E4xw95gPqaR8YYgXLla1Z",
@@ -928,38 +965,53 @@
         {
           "id": "qZ878x3ykidyj8h6Z7QOn",
           "name": "status",
-          "type": "TEXT",
-          "comment": "",
+          "type": "ENUM",
+          "comment": "ACTIVE, SUSPEND",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
-          "default": "",
-          "check": ""
+          "default": "ACTIVE",
+          "check": "",
+          "values": [
+            "ACTIVE",
+            "SUSPEND"
+          ]
         },
         {
           "id": "vdtv2rFYfAdlWVNCQ2ffD",
           "name": "schedule_day",
-          "type": "BIGINT",
-          "comment": "",
+          "type": "ENUM",
+          "comment": "SENIN, SELASA, RABU, KAMIS, JUMAT, SABTU, MINGGU",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "values": [
+            "SENIN",
+            "SELASA",
+            "RABU",
+            "KAMIS",
+            "JUMAT",
+            "SABTU",
+            "MINGGU"
+          ]
         },
         {
           "id": "xq766lLOADGLq-Zk1awLr",
           "name": "schedule_date",
-          "type": "TEXT",
+          "type": "TIMESTAMP",
           "comment": "",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "size": "",
+          "values": []
         },
         {
           "id": "CigOS0nemDuJI8Ua6-w4m",
@@ -1120,18 +1172,16 @@
           "id": "Kn0LBZQqym3NvZjXrCOQp",
           "name": "expense_type",
           "type": "ENUM",
-          "default": "",
+          "default": "MAINTENANCE",
           "check": "",
           "primary": false,
           "unique": false,
           "notNull": true,
           "increment": false,
-          "comment": "",
+          "comment": "MAINTENANCE, INCIDENTAL",
           "values": [
             "MAINTENANCE",
-            "FUEL",
-            "TOLL",
-            "OTHER"
+            "INCIDENTAL"
           ]
         },
         {
@@ -2155,14 +2205,18 @@
         {
           "id": "oWK-jOIZyNahnW0cPZPYF",
           "name": "status",
-          "type": "VARCHAR",
-          "comment": "",
+          "type": "ENUM",
+          "comment": "UNPAID, PAID",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
-          "default": "",
-          "check": ""
+          "default": "UNPAID",
+          "check": "",
+          "values": [
+            "UNPAID",
+            "PAID"
+          ]
         },
         {
           "id": "-_zEAks1Md5GmfGJL4Bqw",
@@ -2224,28 +2278,30 @@
           "check": ""
         },
         {
-          "id": "dN-aiGzXwhnkZDvpz7Df-",
-          "name": "from_table",
+          "id": "iedgmqQ-DLQuGrl0Igw_B",
+          "name": "accounting_uuid",
           "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
           "check": ""
         },
         {
-          "id": "iedgmqQ-DLQuGrl0Igw_B",
-          "name": "origin_uuid",
+          "id": "QpB_lc1winrBq4cLA6vlt",
+          "name": "financial_account_code",
           "type": "VARCHAR",
           "comment": "",
           "unique": false,
           "increment": false,
-          "notNull": false,
+          "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "values": [],
+          "size": ""
         },
         {
           "id": "d9JYDYeOCSw8shfAu-ImN",
@@ -2272,28 +2328,20 @@
           "check": ""
         },
         {
-          "id": "QpB_lc1winrBq4cLA6vlt",
-          "name": "financial_account_code",
-          "type": "VARCHAR",
-          "comment": "",
-          "unique": false,
-          "increment": false,
-          "notNull": true,
-          "primary": false,
-          "default": "",
-          "check": ""
-        },
-        {
           "id": "2vxTVxT2Zju-AR89_J_ZD",
           "name": "entry_type",
-          "type": "VARCHAR",
-          "comment": "",
+          "type": "ENUM",
+          "comment": "DEBIT, CREDIT",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
           "default": "",
-          "check": ""
+          "check": "",
+          "values": [
+            "DEBIT",
+            "CREDIT"
+          ]
         },
         {
           "id": "xdw1xpPqhaCMDt_TbXI4u",
@@ -2310,8 +2358,8 @@
       ],
       "indices": [],
       "id": "gFwNZxeMwaplL2dnZUlxR",
-      "x": 826.4681112820133,
-      "y": 1459.5823298909136
+      "x": 319.0565428971447,
+      "y": 1455.5391941550324
     },
     {
       "id": "yNDcN_B7pavpT4eW0G350",
@@ -2363,18 +2411,17 @@
           "id": "Gbg5O52wzujQgvnjg_SZ9",
           "name": "type",
           "type": "ENUM",
-          "default": "",
+          "default": "LOADING",
           "check": "",
           "primary": false,
           "unique": false,
           "notNull": true,
           "increment": false,
-          "comment": "",
+          "comment": "LOADING, START_TRIP, ON_ROUTE, END_TRIP, ACCIDENT",
           "values": [
             "LOADING",
             "START_TRIP",
             "ON_ROUTE",
-            "UNLOADING",
             "END_TRIP",
             "ACCIDENT"
           ]
@@ -2691,8 +2738,8 @@
     {
       "id": "LCvnVpDILwLcWATHxH-ia",
       "name": "financial_account",
-      "x": 465.11324319795744,
-      "y": 1465.2826399739595,
+      "x": 36.542551755369004,
+      "y": 1451.1317034565766,
       "locked": false,
       "fields": [
         {
@@ -2731,7 +2778,7 @@
           "unique": false,
           "notNull": true,
           "increment": false,
-          "comment": "",
+          "comment": "ASSET, LIABILITY, EQUITY, REVENUE, EXPENSE",
           "values": [
             "ASSET",
             "LIABILITY",
@@ -2896,6 +2943,83 @@
         {
           "id": "eVpRHG7tjqxi2wE6OwZLJ",
           "name": "driver_image",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "Pw18RymG-W8u-MAyHMH1n",
+      "name": "accounting",
+      "x": 610.9550211527397,
+      "y": 1458.6058921436922,
+      "locked": false,
+      "fields": [
+        {
+          "name": "accounting_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "-FmUH9lVCwMDqSiJNR0yc",
+          "size": ""
+        },
+        {
+          "id": "l9nlzoxWkOS01K8KGw-62",
+          "name": "account_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "dUywM4OFI8piHGKcltUIm",
+          "name": "from_table",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "vgVW31X32uOB_DpZpsTZJ",
+          "name": "origin_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "5P8fDrp7unIan82k4NjsS",
+          "name": "description",
           "type": "TEXT",
           "default": "",
           "check": "",
@@ -3143,6 +3267,17 @@
       "deleteConstraint": "No action",
       "name": "fk_user_driver_user_uuid_users",
       "id": "xXjBQ-oD3gbcR_4XuGmY5"
+    },
+    {
+      "startTableId": "Pw18RymG-W8u-MAyHMH1n",
+      "startFieldId": "-FmUH9lVCwMDqSiJNR0yc",
+      "endTableId": "gFwNZxeMwaplL2dnZUlxR",
+      "endFieldId": "iedgmqQ-DLQuGrl0Igw_B",
+      "cardinality": "one_to_many",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_accounting_accounting_uuid_transaction_log",
+      "id": "w52IAXWC_iWQvDHfy4Op_"
     }
   ],
   "notes": [],
@@ -3186,15 +3321,25 @@
       "height": 1610.6406836651822,
       "color": "#175e7a",
       "locked": false
+    },
+    {
+      "id": 4,
+      "name": "Accounting",
+      "x": -13.33161773400957,
+      "y": 1402.988252188082,
+      "width": 918.9325318685319,
+      "height": 467.1574262044692,
+      "color": "#bedb67",
+      "locked": false
     }
   ],
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.5303213506452945,
+    "zoom": 0.8638375985314762,
     "pan": {
-      "x": 1566.054668289055,
-      "y": 1231.3152790664333
+      "x": 524.878085424129,
+      "y": 1614.9788178879578
     }
   }
 }
