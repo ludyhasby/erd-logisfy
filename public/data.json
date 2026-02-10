@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-02-09T03:32:04.217Z",
+  "exported": "2026-02-10T11:08:02.765Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -771,6 +771,18 @@
           "check": ""
         },
         {
+          "id": "DnZq3pW1pZ9-GyR1HjWjU",
+          "name": "purchase_price",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        },
+        {
           "id": "0j_3mbTT1JaOdcZfMrmXP",
           "name": "year",
           "type": "TEXT",
@@ -809,6 +821,19 @@
             "OWN",
             "PARTNER"
           ]
+        },
+        {
+          "id": "fh29AFeNRWLU6or5Jvhhi",
+          "name": "purchasePrice",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "values": []
         },
         {
           "id": "pIxKI4m4qGQGbeD_PZ3xG",
@@ -1087,7 +1112,7 @@
       "id": "q6yGHDBI_-OWa7jw-NJrh",
       "name": "vehicle_expense",
       "x": 2294.376987003848,
-      "y": 1012.7207409938354,
+      "y": 1029.661235170337,
       "locked": false,
       "fields": [
         {
@@ -3029,6 +3054,18 @@
           "increment": false,
           "comment": "",
           "size": ""
+        },
+        {
+          "id": "cgiqfAGqUs9k9f2ZUBi7i",
+          "name": "value",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
         }
       ],
       "comment": "",
@@ -3336,10 +3373,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.8638375985314762,
+    "zoom": 0.3589423646409528,
     "pan": {
-      "x": 524.878085424129,
-      "y": 1614.9788178879578
+      "x": 1543.761991546648,
+      "y": 922.9453990799406
     }
   }
 }
