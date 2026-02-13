@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-02-10T11:08:02.765Z",
+  "exported": "2026-02-13T02:03:52.378Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -3071,6 +3071,100 @@
       "comment": "",
       "indices": [],
       "color": "#175e7a"
+    },
+    {
+      "id": "zyOAeXzV64IKEGfzVIWUQ",
+      "name": "accrued_salaries",
+      "x": 1822.7445133025292,
+      "y": 1103.1885640330147,
+      "locked": false,
+      "fields": [
+        {
+          "name": "accrued_salaries",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "MzI3AQ8xwCP9q39vMUUXl",
+          "size": ""
+        },
+        {
+          "id": "ywISfsAdTrrcgA2yrSU65",
+          "name": "user_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "IhgWOmG6JtAodeFU5QL8e",
+          "name": "request_amount",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "S5DWYK_QgKxSxsv04gtUh",
+          "name": "status",
+          "type": "ENUM",
+          "default": "PENDING",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "PENDING,APPROVE,PAID,REJECT",
+          "values": [
+            "PENDING",
+            "APPROVE",
+            "PAID",
+            "REJECT"
+          ]
+        },
+        {
+          "id": "UQb7wMAc25svO5J6noyS2",
+          "name": "notes",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "Rrkp1XQDXzvEA3U_8GArF",
+          "name": "account_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
     }
   ],
   "relationships": [
@@ -3315,6 +3409,17 @@
       "deleteConstraint": "No action",
       "name": "fk_accounting_accounting_uuid_transaction_log",
       "id": "w52IAXWC_iWQvDHfy4Op_"
+    },
+    {
+      "startTableId": "hu3y_rYUguheIkSaiLnps",
+      "startFieldId": "Fwvom9yJcID7ZIcQBMh9u",
+      "endTableId": "zyOAeXzV64IKEGfzVIWUQ",
+      "endFieldId": "ywISfsAdTrrcgA2yrSU65",
+      "cardinality": "one_to_many",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_users_user_uuid_accrued_salaries",
+      "id": "zT7hJGEqu1ojirxUYpQV-"
     }
   ],
   "notes": [],
@@ -3373,10 +3478,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.3589423646409528,
+    "zoom": 0.34184987108662174,
     "pan": {
-      "x": 1543.761991546648,
-      "y": 922.9453990799406
+      "x": 1874.818697233831,
+      "y": 1097.268325526309
     }
   }
 }
