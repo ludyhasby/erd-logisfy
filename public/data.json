@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-02-25T03:29:57.707Z",
+  "exported": "2026-02-25T04:57:51.993Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -1307,13 +1307,13 @@
     },
     {
       "id": "zIJ-8VDYUnWXt3eYYxjPr",
-      "name": "package",
-      "x": 2742.3564232418385,
-      "y": -486.1553851893113,
+      "name": "package_detail",
+      "x": 2788.7907371894935,
+      "y": -508.66899195181134,
       "locked": false,
       "fields": [
         {
-          "name": "package_uuid",
+          "name": "package_detail_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -1348,24 +1348,11 @@
           "unique": false,
           "notNull": true,
           "increment": false,
-          "comment": "TRANSPORTER, SHIPPER",
+          "comment": "TRANSPORTER, AGENT",
           "values": [
             "TRANSPORTER",
-            "SHIPPER"
+            "AGENT"
           ]
-        },
-        {
-          "id": "xsptmkkjQJIzW5WeKCeB9",
-          "name": "price",
-          "type": "FLOAT",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "values": []
         },
         {
           "id": "-m2KLuVR0LtiBhIjGKLF4",
@@ -1380,22 +1367,6 @@
           "comment": "",
           "size": "",
           "values": []
-        },
-        {
-          "id": "W5adVuc-dF4DnfyZ9ky5O",
-          "name": "status",
-          "type": "ENUM",
-          "default": "ACTIVE",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "ACTIVE, SUSPEND",
-          "values": [
-            "ACTIVE",
-            "SUSPEND"
-          ]
         },
         {
           "id": "nQD3yKovGNwMM_nBAb42e",
@@ -3114,7 +3085,7 @@
       "locked": false,
       "fields": [
         {
-          "name": "accrued_salaries",
+          "name": "accrued_salaries_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -3475,20 +3446,6 @@
           "values": []
         },
         {
-          "id": "QqGoXC0N4jO3ujFGDUihE",
-          "name": "for_approved_owner",
-          "type": "JSON",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": false,
-          "increment": false,
-          "comment": "{\naccount_uuid_1, \naccount_uuid_2,\n}",
-          "size": "",
-          "values": []
-        },
-        {
           "id": "fxE3sKys06jbfsvSpPw3h",
           "name": "created_at",
           "type": "DATETIME",
@@ -3629,6 +3586,300 @@
           "id": "wSx1NjKTRQDWtQ7smn9UM",
           "name": "deleted_at",
           "type": "TIMESTAMP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "GDeNZ2WvG4CHjAnzBLfZO",
+      "name": "agent_partner",
+      "x": 3002.7357449686,
+      "y": 1683.498288103911,
+      "locked": false,
+      "fields": [
+        {
+          "name": "agent_partner_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "NvmwqrPWcxbMBX2bU97-Q",
+          "size": 255
+        },
+        {
+          "id": "AbaAKTv1POPovb4GtsS6C",
+          "name": "owner_acccount_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 255
+        },
+        {
+          "id": "XeSo4tIDPTtNiw_hFn2wR",
+          "name": "notes",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": 65535
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "LO1IHarwNzPVuTwLqbr6I",
+      "name": "trip_monitoring_driver",
+      "x": 1123.0008149034127,
+      "y": 2153.102350436088,
+      "locked": false,
+      "fields": [
+        {
+          "name": "trip_monitoring_driver_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "TPn_DBa_JK3Ahz33Elg7i",
+          "size": ""
+        },
+        {
+          "id": "_PdWMSx6ZBomEcaIHYJ6R",
+          "name": "trip_load_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "FKftRuTN4aXZLzJrIW8H5",
+          "name": "user_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "o44C7jFl_PAcJsRC11Aew",
+          "name": "report_at",
+          "type": "TIMESTAMP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "psptYtlMtkV7SbomHIpJQ",
+          "name": "next_report",
+          "type": "TIMESTAMP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "lBPYp-tguh2Tr-6lZdbfc",
+          "name": "notes",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "Z_MQtZkTWPhCnllXdFCFI",
+          "name": "photo_proof",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "ZGxzWzU3w9Z1SbMFnPoD_",
+      "name": "package_offer",
+      "x": 3064.8830141129306,
+      "y": -519.6252012502489,
+      "locked": false,
+      "fields": [
+        {
+          "name": "package_offer",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "OrzAbHBs9y4Av0_QO8CM5",
+          "size": 255
+        },
+        {
+          "id": "JQ5l4QraTKy5b3MWqD-aN",
+          "name": "name",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "1cVdkW_Z0yYgnGRoYzop_",
+          "name": "for",
+          "type": "ENUM",
+          "default": "TRANSPORTER",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "TRANSPORTER, AGENT",
+          "values": [
+            "TRANSPORTER",
+            "AGENT"
+          ]
+        },
+        {
+          "id": "xsptmkkjQJIzW5WeKCeB9",
+          "name": "price",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "values": []
+        },
+        {
+          "id": "-m2KLuVR0LtiBhIjGKLF4",
+          "name": "duration",
+          "type": "INT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "W5adVuc-dF4DnfyZ9ky5O",
+          "name": "status",
+          "type": "ENUM",
+          "default": "ACTIVE",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "ACTIVE, SUSPEND",
+          "values": [
+            "ACTIVE",
+            "SUSPEND"
+          ]
+        },
+        {
+          "id": "nQD3yKovGNwMM_nBAb42e",
+          "name": "description",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "1jQpek9XO4rEC2VSLVK_j",
+          "name": "has_limit",
+          "type": "BOOLEAN",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "nMGQQKW3GI4C7XsY4jRry",
+          "name": "limit",
+          "type": "INT",
           "default": "",
           "check": "",
           "primary": false,
@@ -3909,18 +4160,29 @@
       "deleteConstraint": "No action",
       "name": "fk_offer_load_owner_bid_load_uuid_bid_load_agent",
       "id": "ImUij_Qaa0yy1jpWPncpH"
+    },
+    {
+      "startTableId": "U4yCYQXzCc5Wwk4cYoQcL",
+      "startFieldId": "VbrHJiAZSiIp3z--qnDFG",
+      "endTableId": "LO1IHarwNzPVuTwLqbr6I",
+      "endFieldId": "_PdWMSx6ZBomEcaIHYJ6R",
+      "cardinality": "one_to_many",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_trip_load_trip_load_uuid_trip_monitoring_driver",
+      "id": "iQ4gpFpcyOhXzTg6LGQYs"
     }
   ],
   "notes": [
     {
       "id": 0,
-      "x": 3183.839465009032,
-      "y": -473.3589177704497,
+      "x": 2787.7626065829986,
+      "y": 48.06622273596497,
       "title": "note_phase2",
       "content": "- in account, add status to mark onboarding from admin. there is suspend reason too (nullable). \n- in account, add account_type to identify business scale (related to profile type of account)\n- in bidding, provide two table about offer and bidding trip load. \n- in accounting, there is tax table that user can add by self.  ",
       "locked": false,
       "color": "#f8acfc",
-      "height": 474,
+      "height": 282,
       "width": 330.85193138585896
     }
   ],
@@ -3948,10 +4210,10 @@
     {
       "id": 2,
       "name": "Management Package",
-      "x": 2422.102801654857,
-      "y": -543.0203657085028,
-      "width": 552.8856728338346,
-      "height": 480.93035699183804,
+      "x": 2425.5721700211952,
+      "y": -563.7313795951407,
+      "width": 923.0578772625004,
+      "height": 516.4058551148438,
       "color": "#83cae6",
       "locked": true
     },
@@ -3978,21 +4240,41 @@
     {
       "id": 5,
       "name": "Bidding",
-      "x": 2142.3449514954673,
-      "y": 1637.6266514158278,
+      "x": 2161.106290464217,
+      "y": 1633.6063644939527,
       "width": 776.622875791686,
       "height": 716.2750255105711,
       "color": "#36e3d5",
+      "locked": false
+    },
+    {
+      "id": 6,
+      "name": "Whitelist Partner",
+      "x": 2970.4765080874326,
+      "y": 1637.6828320290733,
+      "width": 285.45088494500624,
+      "height": 227.3508391522837,
+      "color": "#36e3d5",
+      "locked": false
+    },
+    {
+      "id": 7,
+      "name": "Trip Monitoring Driver",
+      "x": 1096.6837887394356,
+      "y": 2100.973481420562,
+      "width": 275.971133612044,
+      "height": 386.7764614561838,
+      "color": "#175e7a",
       "locked": false
     }
   ],
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.32557130579678256,
+    "zoom": 0.4155206548674831,
     "pan": {
-      "x": 2010.1897281406475,
-      "y": 171.81040609011458
+      "x": 2160.7108374467666,
+      "y": -42.10546670646721
     }
   }
 }
