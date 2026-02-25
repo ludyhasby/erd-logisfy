@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-02-13T02:03:52.378Z",
+  "exported": "2026-02-25T03:29:57.707Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -51,30 +51,64 @@
         {
           "id": "EtZykon1zJdeaGOXGIMJh",
           "name": "business_role",
-          "type": "VARCHAR",
-          "comment": "",
-          "unique": false,
-          "increment": false,
-          "notNull": true,
-          "primary": false,
-          "default": "",
-          "check": "",
-          "size": ""
-        },
-        {
-          "id": "3lBborzsmeLlZLURu4wO6",
-          "name": "status",
           "type": "ENUM",
-          "comment": "TRANSPORTER, SHIPPER",
+          "comment": "TRANSPORTER, AGENT",
           "unique": false,
           "increment": false,
           "notNull": true,
           "primary": false,
           "default": "TRANSPORTER",
           "check": "",
+          "size": "",
           "values": [
             "TRANSPORTER",
-            "SHIPPER"
+            "AGENT"
+          ]
+        },
+        {
+          "id": "3lBborzsmeLlZLURu4wO6",
+          "name": "status",
+          "type": "ENUM",
+          "comment": "PENDING, ACTIVE, SUSPEND",
+          "unique": false,
+          "increment": false,
+          "notNull": true,
+          "primary": false,
+          "default": "PENDING",
+          "check": "",
+          "values": [
+            "PENDING",
+            "ACTIVE",
+            "SUSPEND"
+          ]
+        },
+        {
+          "id": "4miswtYBJtS33CFT8qN2I",
+          "name": "suspend_reason",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "sE_N1rFDVzmDp_GCh_Uwr",
+          "name": "account_type",
+          "type": "ENUM",
+          "default": "CORPORATE",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "PERSONAL, CORPORATE",
+          "values": [
+            "PERSONAL",
+            "CORPORATE"
           ]
         },
         {
@@ -248,8 +282,8 @@
       ],
       "indices": [],
       "id": "hu3y_rYUguheIkSaiLnps",
-      "x": 1862.4053568822997,
-      "y": -122.55880927202185
+      "x": 1866.4894734619086,
+      "y": -79.67577993123967
     },
     {
       "name": "admin",
@@ -379,8 +413,8 @@
       ],
       "indices": [],
       "id": "pTc8hRlAPcpAadDLYlQN1",
-      "x": 1480.2689885148293,
-      "y": -141.6146152262138
+      "x": 1481.2899981852202,
+      "y": -142.63566384562722
     },
     {
       "name": "user_account",
@@ -1111,8 +1145,8 @@
     {
       "id": "q6yGHDBI_-OWa7jw-NJrh",
       "name": "vehicle_expense",
-      "x": 2294.376987003848,
-      "y": 1029.661235170337,
+      "x": 2295.0511180812778,
+      "y": 1080.4801251763693,
       "locked": false,
       "fields": [
         {
@@ -3165,6 +3199,450 @@
       "comment": "",
       "indices": [],
       "color": "#175e7a"
+    },
+    {
+      "id": "vmAK8Zucezcd8mvu5hAer",
+      "name": "offer_load_owner",
+      "x": 2240.71795873327,
+      "y": 1711.9584393273547,
+      "locked": false,
+      "fields": [
+        {
+          "name": "offer_load_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "qjXYqim8RU7kn2UqK2gRf",
+          "size": ""
+        },
+        {
+          "id": "-fKSyczAhWnJ163W_3PcL",
+          "name": "bid_load_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "biCpPRLOI1nRQwSe84uO4",
+          "name": "account_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "DaikjMOe_-izbJ6FbgqC1",
+          "name": "price",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "zp57dNB94z7hwSs3dBoFK",
+          "name": "status",
+          "type": "ENUM",
+          "default": "SUBMITTED, ACCEPTED, REJECTED",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "SUBMITTED, ACCEPTED, REJECTED",
+          "values": [
+            "SUBMITTED",
+            "ACCEPTED",
+            "REJECTED"
+          ]
+        },
+        {
+          "id": "Swg5V2S95BHiZE8WhcCap",
+          "name": "created_at",
+          "type": "TIMESTAMP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "19cVkUr7KOR9o41aWXq94",
+          "name": "updated_at",
+          "type": "TIMESTAMP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "P7QdyjASHPKWhwtomtPeC",
+          "name": "deleted_at",
+          "type": "TIMESTAMP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "OoTMiMtb5rKNqF8yOy2oX",
+      "name": "bid_load_agent",
+      "x": 2582.8126186841373,
+      "y": 1710.0647380133125,
+      "locked": false,
+      "fields": [
+        {
+          "name": "bid_load_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "04pu5o3lgQI6CIDBJiPWU",
+          "size": ""
+        },
+        {
+          "id": "neOiBiu-1t9vaa4gN52Mx",
+          "name": "vendor_account_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "J9CxMzTffCCi4akkaSHNK",
+          "name": "origin_location",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "jcbM5ivpHx7UoJ1Q2dnsZ",
+          "name": "destination_location",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "JD0oz2HyDRPmL-vgBJhMb",
+          "name": "bid_price",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "m-bG-8ifqkNW-7mg_DQRc",
+          "name": "dp",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "ZX8_MD9OA78VMAt1fT8X5",
+          "name": "trip_load_datetime",
+          "type": "DATETIME",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "qu_iv3jGsEwsKpOK1XOpE",
+          "name": "status",
+          "type": "ENUM",
+          "default": "ACTIVE",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "ACTIVE, SUSPEND",
+          "values": [
+            "ACTIVE",
+            "SUSPEND"
+          ]
+        },
+        {
+          "id": "5uT_tPC6HOWcEvsmbzVwO",
+          "name": "winner_account_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "8aX2EDGAGAzO8gIqumY0d",
+          "name": "deal_price",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "38Tf3b7yEf2nGzyTiClqX",
+          "name": "for_public",
+          "type": "BOOLEAN",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "QqGoXC0N4jO3ujFGDUihE",
+          "name": "for_approved_owner",
+          "type": "JSON",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "{\naccount_uuid_1, \naccount_uuid_2,\n}",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "fxE3sKys06jbfsvSpPw3h",
+          "name": "created_at",
+          "type": "DATETIME",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "ZJ2jJTDaFE_TnH1OM0_nu",
+          "name": "updated_at",
+          "type": "DATETIME",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "MkroTiWFX_6rtum8Ihe9V",
+          "name": "deleted_at",
+          "type": "DATETIME",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "b7bwQbulwIp_tgfFT-bfF",
+      "name": "tax",
+      "x": -290.5706975429994,
+      "y": 1444.238316285503,
+      "locked": false,
+      "fields": [
+        {
+          "name": "tax_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "-0Po39Q7iZVmb5W1OMmIo",
+          "size": ""
+        },
+        {
+          "id": "UXeREg5XbsAmWWm4ycAFZ",
+          "name": "tax_name",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "jN9zpkzGQ6w4yDQj9Ci_w",
+          "name": "rate",
+          "type": "DECIMAL",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "3"
+        },
+        {
+          "id": "JW8_Qggc30lrtZxbzRT6L",
+          "name": "status",
+          "type": "ENUM",
+          "default": "ACTIVE",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "ACTIVE, SUSPEND",
+          "values": [
+            "ACTIVE",
+            "SUSPEND"
+          ]
+        },
+        {
+          "id": "1D5rwdCVs8ESzY-pInt6N",
+          "name": "created_at",
+          "type": "TIMESTAMP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "KKuNJm_l0I-mgrsl4pRTK",
+          "name": "updated_at",
+          "type": "TIMESTAMP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "wSx1NjKTRQDWtQ7smn9UM",
+          "name": "deleted_at",
+          "type": "TIMESTAMP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
     }
   ],
   "relationships": [
@@ -3420,9 +3898,32 @@
       "deleteConstraint": "No action",
       "name": "fk_users_user_uuid_accrued_salaries",
       "id": "zT7hJGEqu1ojirxUYpQV-"
+    },
+    {
+      "startTableId": "vmAK8Zucezcd8mvu5hAer",
+      "startFieldId": "-fKSyczAhWnJ163W_3PcL",
+      "endTableId": "OoTMiMtb5rKNqF8yOy2oX",
+      "endFieldId": "04pu5o3lgQI6CIDBJiPWU",
+      "cardinality": "many_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_offer_load_owner_bid_load_uuid_bid_load_agent",
+      "id": "ImUij_Qaa0yy1jpWPncpH"
     }
   ],
-  "notes": [],
+  "notes": [
+    {
+      "id": 0,
+      "x": 3183.839465009032,
+      "y": -473.3589177704497,
+      "title": "note_phase2",
+      "content": "- in account, add status to mark onboarding from admin. there is suspend reason too (nullable). \n- in account, add account_type to identify business scale (related to profile type of account)\n- in bidding, provide two table about offer and bidding trip load. \n- in accounting, there is tax table that user can add by self.  ",
+      "locked": false,
+      "color": "#f8acfc",
+      "height": 474,
+      "width": 330.85193138585896
+    }
+  ],
   "areas": [
     {
       "id": 0,
@@ -3473,15 +3974,25 @@
       "height": 467.1574262044692,
       "color": "#bedb67",
       "locked": false
+    },
+    {
+      "id": 5,
+      "name": "Bidding",
+      "x": 2142.3449514954673,
+      "y": 1637.6266514158278,
+      "width": 776.622875791686,
+      "height": 716.2750255105711,
+      "color": "#36e3d5",
+      "locked": false
     }
   ],
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.34184987108662174,
+    "zoom": 0.32557130579678256,
     "pan": {
-      "x": 1874.818697233831,
-      "y": 1097.268325526309
+      "x": 2010.1897281406475,
+      "y": 171.81040609011458
     }
   }
 }
