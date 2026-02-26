@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-02-25T04:57:51.993Z",
+  "exported": "2026-02-26T04:45:50.762Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -3173,13 +3173,13 @@
     },
     {
       "id": "vmAK8Zucezcd8mvu5hAer",
-      "name": "offer_load_owner",
+      "name": "bidding_offer_uuid",
       "x": 2240.71795873327,
       "y": 1711.9584393273547,
       "locked": false,
       "fields": [
         {
-          "name": "offer_load_uuid",
+          "name": "bidding_offer_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -3193,7 +3193,7 @@
         },
         {
           "id": "-fKSyczAhWnJ163W_3PcL",
-          "name": "bid_load_uuid",
+          "name": "bidding_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -3295,13 +3295,13 @@
     },
     {
       "id": "OoTMiMtb5rKNqF8yOy2oX",
-      "name": "bid_load_agent",
+      "name": "bidding",
       "x": 2582.8126186841373,
       "y": 1710.0647380133125,
       "locked": false,
       "fields": [
         {
-          "name": "bid_load_uuid",
+          "name": "bidding_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -4274,7 +4274,7 @@
     "zoom": 0.4155206548674831,
     "pan": {
       "x": 2160.7108374467666,
-      "y": -42.10546670646721
+      "y": 2167.170989821949
     }
   }
 }
