@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-02-26T04:45:50.762Z",
+  "exported": "2026-03-02T04:07:54.409Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -3894,6 +3894,83 @@
       "comment": "",
       "indices": [],
       "color": "#175e7a"
+    },
+    {
+      "id": "Z5Im1ZY9JqScVoCxz-1ow",
+      "name": "config",
+      "x": 831.3494207433407,
+      "y": -513.140613338021,
+      "locked": false,
+      "fields": [
+        {
+          "name": "config_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "lU4w2GDUc2Dc4xiFvRqCC",
+          "size": ""
+        },
+        {
+          "id": "KfDD1EAeQ9b4LAuqzgPQD",
+          "name": "config_name",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "ySObnmYvg3oxgvOZjSU9h",
+          "name": "value",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "cIWuAIzZtf4XekOPuOti0",
+          "name": "business_role",
+          "type": "ENUM",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "values": []
+        },
+        {
+          "id": "dOw7JqXWITrq8Zmh5bPr3",
+          "name": "notes",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
     }
   ],
   "relationships": [
@@ -4271,10 +4348,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.4155206548674831,
+    "zoom": 0.23137744865585794,
     "pan": {
-      "x": 2160.7108374467666,
-      "y": 2167.170989821949
+      "x": 1767.4464991027244,
+      "y": -63.87440850776801
     }
   }
 }
