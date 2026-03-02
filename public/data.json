@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-03-02T04:07:54.409Z",
+  "exported": "2026-03-02T04:16:03.461Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -3654,13 +3654,13 @@
     },
     {
       "id": "LO1IHarwNzPVuTwLqbr6I",
-      "name": "trip_monitoring_driver",
+      "name": "monitoring_driver",
       "x": 1123.0008149034127,
       "y": 2153.102350436088,
       "locked": false,
       "fields": [
         {
-          "name": "trip_monitoring_driver_uuid",
+          "name": "monitoring_driver_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -4348,10 +4348,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.23137744865585794,
+    "zoom": 0.90702947845805,
     "pan": {
-      "x": 1767.4464991027244,
-      "y": -63.87440850776801
+      "x": 1498.272645965272,
+      "y": 2261.9857884797216
     }
   }
 }
