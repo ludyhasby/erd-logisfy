@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-03-09T04:17:13.810Z",
+  "exported": "2026-03-09T09:31:04.020Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -4059,13 +4059,13 @@
           "id": "odsrhHtmkaILhB84wKFD7",
           "name": "status",
           "type": "ENUM",
-          "default": "",
+          "default": "PENDING",
           "check": "",
           "primary": false,
           "unique": false,
           "notNull": true,
           "increment": false,
-          "comment": "",
+          "comment": "PENDING; ACCEPT; REJECT",
           "values": [
             "PENDING",
             "ACCEPT",
@@ -4518,10 +4518,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.6446089162177973,
+    "zoom": 1.0500000000000003,
     "pan": {
-      "x": 2971.1184739503333,
-      "y": -476.9095445083642
+      "x": 2820.517767005704,
+      "y": -521.1356565946544
     }
   }
 }
