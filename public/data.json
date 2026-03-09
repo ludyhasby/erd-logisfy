@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-03-06T08:37:45.555Z",
+  "exported": "2026-03-09T04:17:13.810Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -1306,123 +1306,14 @@
       "color": "#175e7a"
     },
     {
-      "id": "zIJ-8VDYUnWXt3eYYxjPr",
-      "name": "package_detail",
-      "x": 2788.7907371894935,
-      "y": -508.66899195181134,
-      "locked": false,
-      "fields": [
-        {
-          "name": "package_detail_uuid",
-          "type": "VARCHAR",
-          "default": "",
-          "check": "",
-          "primary": true,
-          "unique": true,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "id": "OrzAbHBs9y4Av0_QO8CM5",
-          "size": 255
-        },
-        {
-          "id": "JQ5l4QraTKy5b3MWqD-aN",
-          "name": "name",
-          "type": "TEXT",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": true,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "size": ""
-        },
-        {
-          "id": "1cVdkW_Z0yYgnGRoYzop_",
-          "name": "for",
-          "type": "ENUM",
-          "default": "TRANSPORTER",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "TRANSPORTER, AGENT",
-          "values": [
-            "TRANSPORTER",
-            "AGENT"
-          ]
-        },
-        {
-          "id": "-m2KLuVR0LtiBhIjGKLF4",
-          "name": "duration",
-          "type": "INT",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "size": "",
-          "values": []
-        },
-        {
-          "id": "nQD3yKovGNwMM_nBAb42e",
-          "name": "description",
-          "type": "TEXT",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "size": ""
-        },
-        {
-          "id": "1jQpek9XO4rEC2VSLVK_j",
-          "name": "has_limit",
-          "type": "BOOLEAN",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "size": "",
-          "values": []
-        },
-        {
-          "id": "nMGQQKW3GI4C7XsY4jRry",
-          "name": "limit",
-          "type": "INT",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "size": "",
-          "values": []
-        }
-      ],
-      "comment": "",
-      "indices": [],
-      "color": "#175e7a"
-    },
-    {
       "id": "QJ7Bx0RsVOqEEAMms3RKe",
-      "name": "account_package",
+      "name": "package_account",
       "x": 2464.260567918311,
       "y": -480.626372280752,
-      "locked": false,
+      "locked": true,
       "fields": [
         {
-          "name": "account_package_uuid",
+          "name": "package_account_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -1449,7 +1340,7 @@
         },
         {
           "id": "xnhDKAMDed7wO4cL1uEOD",
-          "name": "package_uuid",
+          "name": "package_offer_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -1516,6 +1407,47 @@
             "ACTIVE",
             "SUSPEND"
           ]
+        },
+        {
+          "id": "Ycat2eiGBTgPnOTuAjHl8",
+          "name": "has_limit",
+          "type": "BOOLEAN",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "oKdZT-_2mQ0uNZZAUOaId",
+          "name": "limit",
+          "type": "INT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "9WwD8fpyQBcz6e1Hj5eDG",
+          "name": "description",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
         }
       ],
       "comment": "",
@@ -3760,12 +3692,12 @@
     {
       "id": "ZGxzWzU3w9Z1SbMFnPoD_",
       "name": "package_offer",
-      "x": 3064.8830141129306,
-      "y": -519.6252012502489,
+      "x": 3060.229029464995,
+      "y": -476.1880112028505,
       "locked": false,
       "fields": [
         {
-          "name": "package_offer",
+          "name": "package_offer_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -3818,6 +3750,18 @@
           "increment": false,
           "comment": "",
           "values": []
+        },
+        {
+          "id": "QEd08EBxHZ9LMHljwiSQ4",
+          "name": "real_price",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
         },
         {
           "id": "-m2KLuVR0LtiBhIjGKLF4",
@@ -3884,7 +3828,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": true,
+          "notNull": false,
           "increment": false,
           "comment": "",
           "size": "",
@@ -4050,6 +3994,142 @@
       "comment": "",
       "indices": [],
       "color": "#175e7a"
+    },
+    {
+      "id": "ppL7KoklI8aoc9SQMbu8K",
+      "name": "package_purchase",
+      "x": 2749.278539065405,
+      "y": -835.2663623994017,
+      "locked": false,
+      "fields": [
+        {
+          "name": "package_purchase_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "exT4NHXIDyf8r1zcfU36-",
+          "size": ""
+        },
+        {
+          "id": "O5k8e58XDs9DTqm7ZJRVz",
+          "name": "package_offer_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "9y7EDeJ__6_cxWFB7b0F9",
+          "name": "notes",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "hMeyR6viknxih20VzGbnL",
+          "name": "proof",
+          "type": "JSON",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "odsrhHtmkaILhB84wKFD7",
+          "name": "status",
+          "type": "ENUM",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "values": [
+            "PENDING",
+            "ACCEPT",
+            "REJECT"
+          ]
+        },
+        {
+          "id": "zQcDMkBxlsiABj2B3NbaP",
+          "name": "real_price",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "UGLhhGMqjYr4rgzSleTu8",
+          "name": "duration",
+          "type": "INT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "EADlGjUDQlS8m0b-HNzgK",
+          "name": "has_limit",
+          "type": "BOOLEAN",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "W3n01cwAtMixUFhPzbYbP",
+          "name": "limit",
+          "type": "INT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
     }
   ],
   "relationships": [
@@ -4129,17 +4209,6 @@
       "deleteConstraint": "No action",
       "name": "fk_vehicle_user_uuid_users",
       "id": 11
-    },
-    {
-      "startTableId": "zIJ-8VDYUnWXt3eYYxjPr",
-      "startFieldId": "OrzAbHBs9y4Av0_QO8CM5",
-      "endTableId": "QJ7Bx0RsVOqEEAMms3RKe",
-      "endFieldId": "xnhDKAMDed7wO4cL1uEOD",
-      "cardinality": "one_to_many",
-      "updateConstraint": "No action",
-      "deleteConstraint": "No action",
-      "name": "fk_package_package_uuid_account_package",
-      "id": 12
     },
     {
       "startTableId": "QJ7Bx0RsVOqEEAMms3RKe",
@@ -4327,6 +4396,28 @@
       "deleteConstraint": "No action",
       "name": "fk_trip_load_trip_load_uuid_trip_monitoring_driver",
       "id": "iQ4gpFpcyOhXzTg6LGQYs"
+    },
+    {
+      "startTableId": "ZGxzWzU3w9Z1SbMFnPoD_",
+      "startFieldId": "OrzAbHBs9y4Av0_QO8CM5",
+      "endTableId": "ppL7KoklI8aoc9SQMbu8K",
+      "endFieldId": "O5k8e58XDs9DTqm7ZJRVz",
+      "cardinality": "one_to_many",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_package_offer_package_offer_package_purchase",
+      "id": "fdNPWqABrfTN2afRKckqV"
+    },
+    {
+      "startTableId": "ZGxzWzU3w9Z1SbMFnPoD_",
+      "startFieldId": "OrzAbHBs9y4Av0_QO8CM5",
+      "endTableId": "QJ7Bx0RsVOqEEAMms3RKe",
+      "endFieldId": "xnhDKAMDed7wO4cL1uEOD",
+      "cardinality": "one_to_many",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_package_offer_package_offer_uuid_package_account",
+      "id": "62uMrPZEHtFMg6dQdyW13"
     }
   ],
   "notes": [
@@ -4346,10 +4437,10 @@
     {
       "id": 0,
       "name": "Management Account",
-      "x": 1118.1515529417056,
-      "y": -565.5998098430471,
-      "width": 1016.1567707095874,
-      "height": 908.3698211423023,
+      "x": 1125.0952465338573,
+      "y": -571.9388268873014,
+      "width": 1009.2130771174357,
+      "height": 914.7088381865566,
       "color": "#b1f0cd",
       "locked": true
     },
@@ -4366,10 +4457,10 @@
     {
       "id": 2,
       "name": "Management Package",
-      "x": 2425.5721700211952,
-      "y": -563.7313795951407,
-      "width": 923.0578772625004,
-      "height": 516.4058551148438,
+      "x": 2429.7049265738306,
+      "y": -848.4526522352187,
+      "width": 927.6942731551526,
+      "height": 801.1271277549218,
       "color": "#83cae6",
       "locked": true
     },
@@ -4427,10 +4518,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.3418498710866217,
+    "zoom": 0.6446089162177973,
     "pan": {
-      "x": 1795.9508604430641,
-      "y": 536.2145033002641
+      "x": 2971.1184739503333,
+      "y": -476.9095445083642
     }
   }
 }
