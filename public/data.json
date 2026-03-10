@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-03-09T09:31:04.020Z",
+  "exported": "2026-03-10T05:05:02.885Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -841,6 +841,22 @@
           "check": ""
         },
         {
+          "id": "11ON513Gs5c0dKZ6QUJ7M",
+          "name": "status",
+          "type": "ENUM",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "ACTIVATE,DEACTIVATE",
+          "values": [
+            "ACTIVATE",
+            "DEACTIVATE"
+          ]
+        },
+        {
           "id": "rvqMSM4BrgHlCZK5VcjWF",
           "name": "owner_type",
           "type": "ENUM",
@@ -1326,8 +1342,8 @@
           "size": ""
         },
         {
-          "id": "Zl07RfjMITRMkQSmA_qei",
-          "name": "account_uuid",
+          "id": "npJm1lppjyUAR7l7XhOts",
+          "name": "package_purchase_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -1336,12 +1352,13 @@
           "notNull": true,
           "increment": false,
           "comment": "",
-          "size": ""
+          "size": "",
+          "values": []
         },
         {
-          "id": "xnhDKAMDed7wO4cL1uEOD",
-          "name": "package_offer_uuid",
-          "type": "VARCHAR",
+          "id": "ZaV2oUVRAgaRJcZ6AbMfq",
+          "name": "qty",
+          "type": "INT",
           "default": "",
           "check": "",
           "primary": false,
@@ -1349,7 +1366,25 @@
           "notNull": true,
           "increment": false,
           "comment": "",
-          "size": ""
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "YtPDwy_ZWkyZmg5qTF52B",
+          "name": "level",
+          "type": "ENUM",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "BASIC,PLUS,PREMIUM",
+          "values": [
+            "BASIC",
+            "PLUS",
+            "PREMIUM"
+          ]
         },
         {
           "id": "HzQg8JeMM8HQ4gQDtdafE",
@@ -3691,13 +3726,13 @@
     },
     {
       "id": "ZGxzWzU3w9Z1SbMFnPoD_",
-      "name": "package_offer",
-      "x": 3060.229029464995,
-      "y": -476.1880112028505,
+      "name": "package",
+      "x": 3096.6942169649956,
+      "y": -517.5152237028504,
       "locked": false,
       "fields": [
         {
-          "name": "package_offer_uuid",
+          "name": "package_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -3707,7 +3742,7 @@
           "increment": false,
           "comment": "",
           "id": "OrzAbHBs9y4Av0_QO8CM5",
-          "size": 255
+          "size": ""
         },
         {
           "id": "JQ5l4QraTKy5b3MWqD-aN",
@@ -3721,6 +3756,38 @@
           "increment": false,
           "comment": "",
           "size": ""
+        },
+        {
+          "id": "G20JXwvYMRfbLVZY-S4J_",
+          "name": "level",
+          "type": "ENUM",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "BASIC,PLUS,PREMIUM",
+          "size": 255,
+          "values": [
+            "BASIC",
+            "PLUS",
+            "PREMIUM"
+          ]
+        },
+        {
+          "id": "7xD0POh2oLlJ3g1nlSD63",
+          "name": "qty",
+          "type": "INT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
         },
         {
           "id": "1cVdkW_Z0yYgnGRoYzop_",
@@ -3998,8 +4065,8 @@
     {
       "id": "ppL7KoklI8aoc9SQMbu8K",
       "name": "package_purchase",
-      "x": 2749.278539065405,
-      "y": -835.2663623994017,
+      "x": 2746.8475265654047,
+      "y": -837.6973748994017,
       "locked": false,
       "fields": [
         {
@@ -4017,7 +4084,7 @@
         },
         {
           "id": "O5k8e58XDs9DTqm7ZJRVz",
-          "name": "package_offer_uuid",
+          "name": "package_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -4059,13 +4126,13 @@
           "id": "odsrhHtmkaILhB84wKFD7",
           "name": "status",
           "type": "ENUM",
-          "default": "PENDING",
+          "default": "",
           "check": "",
           "primary": false,
           "unique": false,
           "notNull": true,
           "increment": false,
-          "comment": "PENDING; ACCEPT; REJECT",
+          "comment": "",
           "values": [
             "PENDING",
             "ACCEPT",
@@ -4074,7 +4141,7 @@
         },
         {
           "id": "zQcDMkBxlsiABj2B3NbaP",
-          "name": "real_price",
+          "name": "price",
           "type": "FLOAT",
           "default": "",
           "check": "",
@@ -4083,6 +4150,20 @@
           "notNull": true,
           "increment": false,
           "comment": ""
+        },
+        {
+          "id": "_czMMphkJT6FLk-fFd5EN",
+          "name": "qty",
+          "type": "INT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
         },
         {
           "id": "UGLhhGMqjYr4rgzSleTu8",
@@ -4209,17 +4290,6 @@
       "deleteConstraint": "No action",
       "name": "fk_vehicle_user_uuid_users",
       "id": 11
-    },
-    {
-      "startTableId": "QJ7Bx0RsVOqEEAMms3RKe",
-      "startFieldId": "Zl07RfjMITRMkQSmA_qei",
-      "endTableId": "O-F8g9kq8Oc1yuAlNrW_A",
-      "endFieldId": "PfykJR8B4B7KUVKvGbb6g",
-      "cardinality": "many_to_one",
-      "updateConstraint": "No action",
-      "deleteConstraint": "No action",
-      "name": "fk_account_package_account_uuid_account",
-      "id": 13
     },
     {
       "startTableId": "U4yCYQXzCc5Wwk4cYoQcL",
@@ -4409,22 +4479,22 @@
       "id": "fdNPWqABrfTN2afRKckqV"
     },
     {
-      "startTableId": "ZGxzWzU3w9Z1SbMFnPoD_",
-      "startFieldId": "OrzAbHBs9y4Av0_QO8CM5",
+      "startTableId": "ppL7KoklI8aoc9SQMbu8K",
+      "startFieldId": "exT4NHXIDyf8r1zcfU36-",
       "endTableId": "QJ7Bx0RsVOqEEAMms3RKe",
-      "endFieldId": "xnhDKAMDed7wO4cL1uEOD",
+      "endFieldId": "npJm1lppjyUAR7l7XhOts",
       "cardinality": "one_to_many",
       "updateConstraint": "No action",
       "deleteConstraint": "No action",
-      "name": "fk_package_offer_package_offer_uuid_package_account",
-      "id": "62uMrPZEHtFMg6dQdyW13"
+      "name": "fk_package_purchase_package_purchase_uuid_package_account",
+      "id": "_98mQnt2AxMnCOw-Cenpe"
     }
   ],
   "notes": [
     {
       "id": 0,
-      "x": 2787.7626065829986,
-      "y": 48.06622273596497,
+      "x": 3259.379031582999,
+      "y": 119.78109148596496,
       "title": "note_phase2",
       "content": "- in account, add status to mark onboarding from admin. there is suspend reason too (nullable). \n- in account, add account_type to identify business scale (related to profile type of account)\n- in bidding, provide two table about offer and bidding trip load. \n- in accounting, there is tax table that user can add by self.  ",
       "locked": false,
@@ -4448,19 +4518,19 @@
       "id": 1,
       "name": "Management Vehicle",
       "x": 2235.060509699385,
-      "y": 369.9196490988297,
-      "width": 628.7377321878512,
-      "height": 1182.3727182178436,
+      "y": 359.9681939549234,
+      "width": 683.8321777347069,
+      "height": 1192.32417336175,
       "color": "#f5f069",
       "locked": false
     },
     {
       "id": 2,
       "name": "Management Package",
-      "x": 2429.7049265738306,
+      "x": 2430.259174934092,
       "y": -848.4526522352187,
-      "width": 927.6942731551526,
-      "height": 801.1271277549218,
+      "width": 927.1400247948914,
+      "height": 875.372133690142,
       "color": "#83cae6",
       "locked": true
     },
@@ -4518,10 +4588,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 1.0500000000000003,
+    "zoom": 0.8227024747918821,
     "pan": {
-      "x": 2820.517767005704,
-      "y": -521.1356565946544
+      "x": 2500.758537434092,
+      "y": -351.71071542007655
     }
   }
 }
