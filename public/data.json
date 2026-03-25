@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-03-11T15:03:56.767Z",
+  "exported": "2026-03-25T07:47:46.998Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -52,7 +52,7 @@
           "id": "EtZykon1zJdeaGOXGIMJh",
           "name": "business_role",
           "type": "ENUM",
-          "comment": "TRANSPORTER, AGENT",
+          "comment": "TRANSPORTER, AGENT, SHIPPER",
           "unique": false,
           "increment": false,
           "notNull": true,
@@ -62,7 +62,8 @@
           "size": "",
           "values": [
             "TRANSPORTER",
-            "AGENT"
+            "AGENT",
+            "SHIPPER"
           ]
         },
         {
@@ -463,7 +464,7 @@
           "id": "6IArCB3MZtESVl8il3kYN",
           "name": "role",
           "type": "ENUM",
-          "comment": "ADMIN, OWNER, PARTNER, DRIVER",
+          "comment": "ADMIN, OWNER, PARTNER, DRIVER, SHIPPER, CUSTOMER",
           "unique": false,
           "increment": false,
           "notNull": true,
@@ -474,7 +475,9 @@
             "ADMIN",
             "OWNER",
             "PARTNER",
-            "DRIVER"
+            "DRIVER",
+            "SHIPPER",
+            "CUSTOMER"
           ]
         },
         {
@@ -3997,6 +4000,213 @@
       "comment": "",
       "indices": [],
       "color": "#175e7a"
+    },
+    {
+      "id": "WGpT77LTWWU7nEWsPL91K",
+      "name": "customer",
+      "x": 251.91706013256635,
+      "y": 741.1070130436283,
+      "locked": false,
+      "fields": [
+        {
+          "name": "customer_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "BAJYBbcQdNMyOnSKs7OWO",
+          "size": ""
+        },
+        {
+          "id": "-0c5drJwL2b4AvB-wJU8v",
+          "name": "user_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "BMEKaT6_xR8s82IMvxPeY",
+          "name": "name",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "dF6PPpKBX-p6K_Uq4z6VJ",
+          "name": "email",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "qSgL1ST4GHFHKgaWLVI-g",
+          "name": "phone",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "VUa52KH8yuxxFrVHPIvYA",
+          "name": "address",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "HXdUuAiqY1V-7h-uLlnh5",
+          "name": "notes",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "TgMk5zYek8pesAalbBHNs",
+      "name": "product",
+      "x": 3.553925837970212,
+      "y": 743.0321321645237,
+      "locked": false,
+      "fields": [
+        {
+          "name": "product_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "4nfgoq_lSsdJRDjSfvL71",
+          "size": ""
+        },
+        {
+          "id": "no23dzYvxJ9Oyjl6iSp2V",
+          "name": "code",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "GRTxzpQwh2csC92RXLa8-",
+          "name": "name",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "iJALe8tZAdFKS-xX1R8HQ",
+          "name": "cost_price",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "1AMuL2umVbFSQ1smiHczP",
+          "name": "sell_price",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "A5nwNn8ExN4xdmHH3pjVR",
+          "name": "status",
+          "type": "ENUM",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "ACTIVE, SUSPEND",
+          "values": [
+            "ACTIVE",
+            "SUSPEND"
+          ]
+        },
+        {
+          "id": "0FJphIFstqp7KRpkXj2Px",
+          "name": "description",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
     }
   ],
   "relationships": [
@@ -4274,6 +4484,17 @@
       "deleteConstraint": "No action",
       "name": "fk_trip_load_trip_load_uuid_trip_monitoring_driver",
       "id": "iQ4gpFpcyOhXzTg6LGQYs"
+    },
+    {
+      "startTableId": "WGpT77LTWWU7nEWsPL91K",
+      "startFieldId": "-0c5drJwL2b4AvB-wJU8v",
+      "endTableId": "hu3y_rYUguheIkSaiLnps",
+      "endFieldId": "Fwvom9yJcID7ZIcQBMh9u",
+      "cardinality": "many_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_customer_user_uuid_users",
+      "id": "I82ncVlpgfntIBdtC8J_X"
     }
   ],
   "notes": [
@@ -4282,10 +4503,10 @@
       "x": 3120.96396949148,
       "y": 32.30672376699323,
       "title": "note_phase2",
-      "content": "- in account, add status to mark onboarding from admin. there is suspend reason too (nullable). \n- in account, add account_type to identify business scale (related to profile type of account)\n- in bidding, provide two table about offer and bidding trip load. \n- in accounting, there is tax table that user can add by self.  \n\n- value & locked date - accounting\n",
+      "content": "- in account, add status to mark onboarding from admin. there is suspend reason too (nullable). \n- in account, add account_type to identify business scale (related to profile type of account)\n- in bidding, provide two table about offer and bidding trip load. \n- in accounting, there is tax table that user can add by self.  \n- order management, add role (shipper, customer)\n\n- value & locked date - accounting\n\n",
       "locked": false,
       "color": "#f8acfc",
-      "height": 328,
+      "height": 426,
       "width": 330.85193138585896
     }
   ],
@@ -4369,15 +4590,25 @@
       "height": 386.7764614561838,
       "color": "#175e7a",
       "locked": false
+    },
+    {
+      "id": 8,
+      "name": "Order Management",
+      "x": -30.986001627955943,
+      "y": 681.5381133477717,
+      "width": 742.0859821711051,
+      "height": 495.6481873299763,
+      "color": "#87c7e0",
+      "locked": false
     }
   ],
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.415520654867483,
+    "zoom": 0.4155206548674831,
     "pan": {
-      "x": 2147.54525389404,
-      "y": 515.847379325952
+      "x": 1074.6084285379634,
+      "y": 775.1726776884476
     }
   }
 }
