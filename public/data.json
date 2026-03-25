@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-03-25T07:47:46.998Z",
+  "exported": "2026-03-25T08:00:14.872Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -4207,6 +4207,69 @@
       "comment": "",
       "indices": [],
       "color": "#175e7a"
+    },
+    {
+      "id": "ksEeKdQ-YMA3YI5109RLs",
+      "name": "vehicle_installment",
+      "x": 2623.8952363155927,
+      "y": 1080.6339255875466,
+      "locked": false,
+      "fields": [
+        {
+          "name": "vehicle_installment_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "XBCrkhjRn4w60aHa06etd",
+          "size": ""
+        },
+        {
+          "id": "dT0wm-zVYABMslds9qq7w",
+          "name": "vehicle_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "2D83L1joo3blAULsCqtSH",
+          "name": "amount",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "0JSwo1nZ2-Y3jS7CS2O1i",
+          "name": "notes",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
     }
   ],
   "relationships": [
@@ -4495,6 +4558,17 @@
       "deleteConstraint": "No action",
       "name": "fk_customer_user_uuid_users",
       "id": "I82ncVlpgfntIBdtC8J_X"
+    },
+    {
+      "startTableId": "ksEeKdQ-YMA3YI5109RLs",
+      "startFieldId": "XBCrkhjRn4w60aHa06etd",
+      "endTableId": "1mDxCYHEE3SAtfbev3xTl",
+      "endFieldId": "hKNJXpqW-_36fR-3d3efS",
+      "cardinality": "one_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_vehicle_installment_vehicle_installment_uuid_vehicle",
+      "id": "UNFB-IN9m611B6pRmxQgl"
     }
   ],
   "notes": [
@@ -4607,8 +4681,8 @@
   "transform": {
     "zoom": 0.4155206548674831,
     "pan": {
-      "x": 1074.6084285379634,
-      "y": 775.1726776884476
+      "x": 2631.170422148236,
+      "y": 585.0497135399168
     }
   }
 }
