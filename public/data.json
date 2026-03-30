@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-03-25T08:00:14.872Z",
+  "exported": "2026-03-30T09:44:21.543Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -147,6 +147,20 @@
           "primary": false,
           "default": "",
           "check": ""
+        },
+        {
+          "id": "8TA9Ba9x-oMwj3RNvtVMt",
+          "name": "convertion_at",
+          "type": "TIMESTAMP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
         }
       ],
       "indices": [],
@@ -283,8 +297,8 @@
       ],
       "indices": [],
       "id": "hu3y_rYUguheIkSaiLnps",
-      "x": 1866.4894734619086,
-      "y": -79.67577993123967
+      "x": 1865.8545334507478,
+      "y": -44.755154698724766
     },
     {
       "name": "admin",
@@ -4242,6 +4256,19 @@
           "size": ""
         },
         {
+          "id": "UVubDisony6yySOcJHFgc",
+          "name": "credit_account_code",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
           "id": "2D83L1joo3blAULsCqtSH",
           "name": "amount",
           "type": "FLOAT",
@@ -4679,10 +4706,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.4155206548674831,
+    "zoom": 0.43629668761085727,
     "pan": {
-      "x": 2631.170422148236,
-      "y": 585.0497135399168
+      "x": 1809.2510451893952,
+      "y": -230.4917761361824
     }
   }
 }
