@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-04-23T13:17:04.116Z",
+  "exported": "2026-04-27T13:22:14.474Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -297,8 +297,8 @@
       ],
       "indices": [],
       "id": "hu3y_rYUguheIkSaiLnps",
-      "x": 1865.8545334507478,
-      "y": -44.755154698724766
+      "x": 1882.102757352853,
+      "y": -39.62413662437581
     },
     {
       "name": "admin",
@@ -428,8 +428,8 @@
       ],
       "indices": [],
       "id": "pTc8hRlAPcpAadDLYlQN1",
-      "x": 1481.2899981852202,
-      "y": -142.63566384562722
+      "x": 1389.7868425259971,
+      "y": -158.02871806867407
     },
     {
       "name": "user_account",
@@ -3646,8 +3646,8 @@
     {
       "id": "GDeNZ2WvG4CHjAnzBLfZO",
       "name": "agent_partner",
-      "x": 3002.7357449686,
-      "y": 1683.498288103911,
+      "x": 4257.5822019405605,
+      "y": -180.61349136921368,
       "locked": false,
       "fields": [
         {
@@ -3661,7 +3661,7 @@
           "increment": false,
           "comment": "",
           "id": "NvmwqrPWcxbMBX2bU97-Q",
-          "size": 255
+          "size": ""
         },
         {
           "id": "AbaAKTv1POPovb4GtsS6C",
@@ -3674,7 +3674,7 @@
           "notNull": true,
           "increment": false,
           "comment": "",
-          "size": 255
+          "size": ""
         },
         {
           "id": "XeSo4tIDPTtNiw_hFn2wR",
@@ -3687,12 +3687,13 @@
           "notNull": false,
           "increment": false,
           "comment": "",
-          "size": 65535
+          "size": ""
         }
       ],
       "comment": "",
       "indices": [],
-      "color": "#175e7a"
+      "color": "#175e7a",
+      "hidden": false
     },
     {
       "id": "LO1IHarwNzPVuTwLqbr6I",
@@ -4375,241 +4376,6 @@
           "notNull": true,
           "increment": false,
           "comment": ""
-        }
-      ],
-      "comment": "",
-      "indices": [],
-      "color": "#175e7a"
-    },
-    {
-      "id": "bdLc2EwZxMskTpZHQodwr",
-      "name": "close_book",
-      "x": 1134.3771314251449,
-      "y": 2641.8278304008577,
-      "locked": false,
-      "fields": [
-        {
-          "name": "close_book_uuid",
-          "type": "VARCHAR",
-          "default": "",
-          "check": "",
-          "primary": true,
-          "unique": true,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "id": "eDDfdAEOQU7o6qiRTfbv2",
-          "size": 255
-        },
-        {
-          "id": "8tU1cJaXL5TDk5yWl0QkX",
-          "name": "start_period",
-          "type": "TIMESTAMP",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": false,
-          "increment": false,
-          "comment": "",
-          "size": "",
-          "values": []
-        },
-        {
-          "id": "9gfc7nGAvA0ok3hXtrMAW",
-          "name": "end_period",
-          "type": "TIMESTAMP",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "size": "",
-          "values": []
-        },
-        {
-          "id": "gfgiU1PPyId21RH-kbq8p",
-          "name": "status",
-          "type": "ENUM",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "values": [
-            "PENDING",
-            "ACTIVE",
-            "SUSPEND"
-          ]
-        },
-        {
-          "id": "Yq0f8A2IWBvzjCOF07efd",
-          "name": "notes",
-          "type": "TEXT",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": false,
-          "increment": false,
-          "comment": "",
-          "size": 65535
-        },
-        {
-          "id": "MsfNTj8oKZU03Q70V9Cth",
-          "name": "trial_balance",
-          "type": "JSON",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "size": "",
-          "values": []
-        },
-        {
-          "id": "TySGpdOqsZXaFbtkgUymm",
-          "name": "balance_sheet",
-          "type": "JSON",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "size": "",
-          "values": []
-        },
-        {
-          "id": "O6gvRdaRZO_DIRFQxSryB",
-          "name": "income_statement",
-          "type": "JSON",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "size": "",
-          "values": []
-        },
-        {
-          "id": "2-pQmeVxAbitasRP8bIEw",
-          "name": "lock_period_uuid",
-          "type": "VARCHAR",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "size": 255
-        }
-      ],
-      "comment": "",
-      "indices": [],
-      "color": "#175e7a"
-    },
-    {
-      "id": "zecwFf5qOG4WUpS1giN50",
-      "name": "lock_period",
-      "x": 1402.445814439514,
-      "y": 2646.917676315388,
-      "locked": false,
-      "fields": [
-        {
-          "name": "lock_period_uuid",
-          "type": "VARCHAR",
-          "default": "",
-          "check": "",
-          "primary": true,
-          "unique": true,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "id": "b5v9pLtw1bIUnnOnqxeuI",
-          "size": 255
-        },
-        {
-          "id": "7r_ZYv-5pu0sFgjrezRQm",
-          "name": "start_period",
-          "type": "TIMESTAMP",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "size": "",
-          "values": []
-        },
-        {
-          "id": "6ZmKVj7ZAIDHmBnYLkteY",
-          "name": "end_period",
-          "type": "TIMESTAMP",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "size": "",
-          "values": []
-        },
-        {
-          "id": "W76YEmnit9pYAQqwwdMnl",
-          "name": "from_close_book",
-          "type": "BOOLEAN",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": false,
-          "increment": false,
-          "comment": "",
-          "size": "",
-          "values": []
-        },
-        {
-          "id": "tHtxw_w5Zkyub5wX3z87D",
-          "name": "status",
-          "type": "ENUM",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "values": [
-            "PENDING",
-            "ACTIVE",
-            "SUSPEND"
-          ]
-        },
-        {
-          "id": "t11bsMHndzy3LMVnsbwYs",
-          "name": "notes",
-          "type": "VARCHAR",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": false,
-          "increment": false,
-          "comment": "",
-          "size": 255
         }
       ],
       "comment": "",
@@ -5443,8 +5209,8 @@
     {
       "id": "Lvt7cskPnmqWZD3xQ14Al",
       "name": "product",
-      "x": 4258.482994788395,
-      "y": -1748.0319824860337,
+      "x": 3516.0239644463577,
+      "y": -435.84360240686,
       "locked": false,
       "fields": [
         {
@@ -5485,23 +5251,6 @@
           "increment": false,
           "comment": "",
           "size": ""
-        },
-        {
-          "id": "yuMTDHJWIi1NWTU04W0Zj",
-          "name": "UOM",
-          "type": "ENUM",
-          "default": "PCS",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "values": [
-            "PCS",
-            "Unit",
-            "Pair"
-          ]
         },
         {
           "id": "y-zE8PoWE0Ro0RgDMBc6Z",
@@ -5545,6 +5294,432 @@
         },
         {
           "id": "Tbo2huwJHs3EsxoufWstn",
+          "name": "description",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "cr8jIRlE0ljE5nN3he0Sk",
+      "name": "province",
+      "x": 3530.0371248002716,
+      "y": 108.07374682398321,
+      "locked": false,
+      "fields": [
+        {
+          "name": "province_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "dr650bhSEEvm1Z3MGFO9E",
+          "size": ""
+        },
+        {
+          "id": "Ok8mCJ5F0jM5pafgKapdn",
+          "name": "name",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "YI5ZQR9x156RUwFEbk7ra",
+          "name": "description",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "_JB4Lj_qr60gq1mb1brZJ",
+      "name": "city",
+      "x": 3840.4982361412144,
+      "y": 146.79771793621634,
+      "locked": false,
+      "fields": [
+        {
+          "name": "city_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "LF8vs-sAereNUsoigmhul",
+          "size": ""
+        },
+        {
+          "id": "aFXI93QrqqFg9_YXUJT9F",
+          "name": "province_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "b7El_36-yQqw16eYew9xW",
+          "name": "name",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "OxWGy7nXXisaEBaZ3ZuXc",
+          "name": "description",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "VjZpfSnrpble-QwcZKlsq",
+          "name": "is_active",
+          "type": "BOOLEAN",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "-DFqOYVV3RL-iD5aZtGyV",
+      "name": "package",
+      "x": 3882.2765646757007,
+      "y": -452.6841673306442,
+      "locked": false,
+      "fields": [
+        {
+          "name": "package_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "9b3nJipd4o6o_B4SWzahu",
+          "size": ""
+        },
+        {
+          "id": "rFEwl0CvSq3dGTnrlSFm7",
+          "name": "name",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "iT2UJ3bFJNNE8ZH1ltHwg",
+          "name": "description",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "NGTxr8MeDS0LubNfBsSPc",
+      "name": "product_package",
+      "x": 3881.5378369538066,
+      "y": -248.79531608775366,
+      "locked": false,
+      "fields": [
+        {
+          "name": "product_package_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "DGGU8bwT9CSoYFn-SKg6j",
+          "size": ""
+        },
+        {
+          "id": "TLrHITM7IxHbB85xpVSC0",
+          "name": "product_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "5KaAVDqksWCXxraywK1DW",
+          "name": "package_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "aXOT9JX9Ki_IyJ7BKBCG3",
+      "name": "agreements",
+      "x": 4205.214376160324,
+      "y": 105.7013242388339,
+      "locked": false,
+      "fields": [
+        {
+          "name": "agreement_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "FcMDDd5fTSJ4SwTx8yPdQ",
+          "size": ""
+        },
+        {
+          "id": "TIhdZsfslvLKZy0LHYAAD",
+          "name": "agent_partner_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "oKG_SaDpQqPmmGT7TXwPn",
+          "name": "name",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "ILd0L4dUuuvltpuFRo3EV",
+          "name": "valid_until",
+          "type": "TIMESTAMP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "1xkg7IrqwWB3lTAxxARUt",
+          "name": "is_active",
+          "type": "BOOLEAN",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "pIWDIVbeRmIF8v_MIzmtY",
+          "name": "pricing_set",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "o42fy91yRinTjjo3tvSqG",
+          "name": "description",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "1mv2ZbRfPyQeI3-kVmfrG",
+      "name": "agreements_rate",
+      "x": 4206.162892954661,
+      "y": 448.5355989284685,
+      "locked": false,
+      "fields": [
+        {
+          "name": "agreement_rate_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "WVM6kAIziqb1371_dnmSg",
+          "size": ""
+        },
+        {
+          "id": "oN3p9jodcdKo-Vw4DJPho",
+          "name": "agreement_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "BoW1KY15z9-Ngfog6ySxZ",
+          "name": "city_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "jyyP5VBPerF9jjn20Snv8",
+          "name": "product_package_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "7calXofOTUXdzO1Al3lnX",
+          "name": "price",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "7LeKItJVsuD9mFORXRqdJ",
           "name": "description",
           "type": "TEXT",
           "default": "",
@@ -5936,13 +6111,79 @@
       "deleteConstraint": "No action",
       "name": "fk_delivery_order_delivery_order_uuid_customer_payment",
       "id": "9i_ses8wbJpMF9QDkl9J3"
+    },
+    {
+      "startTableId": "cr8jIRlE0ljE5nN3he0Sk",
+      "startFieldId": "dr650bhSEEvm1Z3MGFO9E",
+      "endTableId": "_JB4Lj_qr60gq1mb1brZJ",
+      "endFieldId": "aFXI93QrqqFg9_YXUJT9F",
+      "cardinality": "one_to_many",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_province_province_uuid_city",
+      "id": "-TEO8aGkmgDSgANVaF8xN"
+    },
+    {
+      "startTableId": "Lvt7cskPnmqWZD3xQ14Al",
+      "startFieldId": "LBnDDJJ5fCWWAW3lA4yyk",
+      "endTableId": "NGTxr8MeDS0LubNfBsSPc",
+      "endFieldId": "TLrHITM7IxHbB85xpVSC0",
+      "cardinality": "one_to_many",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_product_product_uuid_product_package",
+      "id": "emVPNoUmx_AeX5KEVEIN0"
+    },
+    {
+      "startTableId": "-DFqOYVV3RL-iD5aZtGyV",
+      "startFieldId": "9b3nJipd4o6o_B4SWzahu",
+      "endTableId": "NGTxr8MeDS0LubNfBsSPc",
+      "endFieldId": "5KaAVDqksWCXxraywK1DW",
+      "cardinality": "one_to_many",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_package_package_uuid_product_package",
+      "id": "cH-WTtHmh5TFX5VDnWmlB"
+    },
+    {
+      "startTableId": "aXOT9JX9Ki_IyJ7BKBCG3",
+      "startFieldId": "FcMDDd5fTSJ4SwTx8yPdQ",
+      "endTableId": "1mv2ZbRfPyQeI3-kVmfrG",
+      "endFieldId": "oN3p9jodcdKo-Vw4DJPho",
+      "cardinality": "one_to_many",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_agreements_agreement_uuid_agreements_rate",
+      "id": "U1DXk097J7RIXwb7QZ6r5"
+    },
+    {
+      "startTableId": "_JB4Lj_qr60gq1mb1brZJ",
+      "startFieldId": "LF8vs-sAereNUsoigmhul",
+      "endTableId": "1mv2ZbRfPyQeI3-kVmfrG",
+      "endFieldId": "BoW1KY15z9-Ngfog6ySxZ",
+      "cardinality": "one_to_many",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_city_city_uuid_agreements_rate",
+      "id": "g8i3K_Duf5k9aijMNhWqw"
+    },
+    {
+      "startTableId": "GDeNZ2WvG4CHjAnzBLfZO",
+      "startFieldId": "NvmwqrPWcxbMBX2bU97-Q",
+      "endTableId": "aXOT9JX9Ki_IyJ7BKBCG3",
+      "endFieldId": "TIhdZsfslvLKZy0LHYAAD",
+      "cardinality": "one_to_many",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_agent_partner_agent_partner_uuid_agreements",
+      "id": "L3-6WAi41nGY4rUe91e6S"
     }
   ],
   "notes": [
     {
       "id": 0,
-      "x": 3120.96396949148,
-      "y": 32.30672376699323,
+      "x": 2973.3079522001926,
+      "y": 11.412004338980921,
       "title": "note_phase2",
       "content": "- in account, add status to mark onboarding from admin. there is suspend reason too (nullable). \n- in account, add account_type to identify business scale (related to profile type of account)\n- in bidding, provide two table about offer and bidding trip load. \n- in accounting, there is tax table that user can add by self.  \n- order management, add role (shipper, customer)\n\n- value & locked date - accounting\n\n",
       "locked": false,
@@ -5955,10 +6196,10 @@
     {
       "id": 0,
       "name": "Management Account",
-      "x": 1118.1515529417056,
+      "x": 1130.045027861699,
       "y": -565.5998098430471,
-      "width": 1016.1567707095874,
-      "height": 908.3698211423023,
+      "width": 1004.2632957895939,
+      "height": 952.4423541550391,
       "color": "#b1f0cd",
       "locked": true
     },
@@ -6015,8 +6256,8 @@
     {
       "id": 6,
       "name": "Whitelist Partner",
-      "x": 2970.4765080874326,
-      "y": 1637.6828320290733,
+      "x": 4225.322965059393,
+      "y": -226.4289474440512,
       "width": 285.45088494500624,
       "height": 227.3508391522837,
       "color": "#36e3d5",
@@ -6034,26 +6275,16 @@
     },
     {
       "id": 8,
-      "name": "Close Book",
-      "x": 1095.886284596744,
-      "y": 2580.8651645396812,
-      "width": 621.2956474689947,
-      "height": 482.39483783621654,
-      "color": "#175e7a",
-      "locked": false
-    },
-    {
-      "id": 9,
       "name": "Customer",
-      "x": 2430.766712714276,
-      "y": -1098.1476539413957,
+      "x": 2433.6303530957593,
+      "y": -1119.5407357083652,
       "width": 780.8489787572234,
       "height": 508.29793986607945,
       "color": "#175e7a",
       "locked": false
     },
     {
-      "id": 10,
+      "id": 9,
       "name": "Delivery Order",
       "x": 3346.2805487731384,
       "y": -1792.5480060996654,
@@ -6063,14 +6294,34 @@
       "locked": false
     },
     {
-      "id": 11,
+      "id": 10,
       "name": "Product",
-      "x": 4209.845114551831,
-      "y": -1791.283224219375,
-      "width": 320.8795888464656,
-      "height": 430.678261864512,
+      "x": 3465.287146541822,
+      "y": -485.385305512386,
+      "width": 694.7510415662227,
+      "height": 453.0372119397301,
       "color": "#175e7a",
-      "locked": true
+      "locked": false
+    },
+    {
+      "id": 11,
+      "name": "Province",
+      "x": 3460.678993429489,
+      "y": 47.632202596621454,
+      "width": 653.1867453377542,
+      "height": 361.6146071445919,
+      "color": "#175e7a",
+      "locked": false
+    },
+    {
+      "id": 12,
+      "name": "agreements",
+      "x": 4170.951210596608,
+      "y": 65.69755080426273,
+      "width": 290.44019203712287,
+      "height": 723.4735484832007,
+      "color": "#175e7a",
+      "locked": false
     }
   ],
   "types": [],
@@ -6078,8 +6329,8 @@
   "transform": {
     "zoom": 0.5846792890864374,
     "pan": {
-      "x": 807.2813935478598,
-      "y": 1900.2292388568032
+      "x": 4044.0685992533504,
+      "y": -268.67379370747653
     }
   }
 }
