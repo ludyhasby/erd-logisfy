@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-04-27T13:22:14.474Z",
+  "exported": "2026-04-28T07:29:20.024Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -3645,13 +3645,13 @@
     },
     {
       "id": "GDeNZ2WvG4CHjAnzBLfZO",
-      "name": "agent_partner",
+      "name": "transporter_shipper_partnership",
       "x": 4257.5822019405605,
       "y": -180.61349136921368,
       "locked": false,
       "fields": [
         {
-          "name": "agent_partner_uuid",
+          "name": "transporter_shipper_partnership_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -3665,7 +3665,7 @@
         },
         {
           "id": "AbaAKTv1POPovb4GtsS6C",
-          "name": "owner_acccount_uuid",
+          "name": "transporter_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -5364,8 +5364,8 @@
     {
       "id": "_JB4Lj_qr60gq1mb1brZJ",
       "name": "city",
-      "x": 3840.4982361412144,
-      "y": 146.79771793621634,
+      "x": 3832.6184136565234,
+      "y": 109.3688316641061,
       "locked": false,
       "fields": [
         {
@@ -5441,13 +5441,13 @@
     },
     {
       "id": "-DFqOYVV3RL-iD5aZtGyV",
-      "name": "package",
+      "name": "packing",
       "x": 3882.2765646757007,
       "y": -452.6841673306442,
       "locked": false,
       "fields": [
         {
-          "name": "package_uuid",
+          "name": "packing_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -5461,7 +5461,7 @@
         },
         {
           "id": "rFEwl0CvSq3dGTnrlSFm7",
-          "name": "name",
+          "name": "packing_name",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -5492,13 +5492,13 @@
     },
     {
       "id": "NGTxr8MeDS0LubNfBsSPc",
-      "name": "product_package",
+      "name": "product_packing",
       "x": 3881.5378369538066,
       "y": -248.79531608775366,
       "locked": false,
       "fields": [
         {
-          "name": "product_package_uuid",
+          "name": "product_packing_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -5525,7 +5525,7 @@
         },
         {
           "id": "5KaAVDqksWCXxraywK1DW",
-          "name": "package_uuid",
+          "name": "packing_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -5616,19 +5616,6 @@
           "values": []
         },
         {
-          "id": "pIWDIVbeRmIF8v_MIzmtY",
-          "name": "pricing_set",
-          "type": "VARCHAR",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "size": ""
-        },
-        {
           "id": "o42fy91yRinTjjo3tvSqG",
           "name": "description",
           "type": "TEXT",
@@ -5694,7 +5681,7 @@
         },
         {
           "id": "jyyP5VBPerF9jjn20Snv8",
-          "name": "product_package_uuid",
+          "name": "product_packing",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -6327,10 +6314,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.5846792890864374,
+    "zoom": 0.1998725396012162,
     "pan": {
-      "x": 4044.0685992533504,
-      "y": -268.67379370747653
+      "x": 3718.061338605673,
+      "y": 153.43706781008018
     }
   }
 }
