@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-04-28T07:29:20.024Z",
+  "exported": "2026-05-05T11:00:01.327Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -3206,7 +3206,7 @@
       "id": "vmAK8Zucezcd8mvu5hAer",
       "name": "bidding_offer",
       "x": 2240.71795873327,
-      "y": 1711.9584393273547,
+      "y": 1702.953005210614,
       "locked": false,
       "fields": [
         {
@@ -3326,8 +3326,8 @@
     {
       "id": "OoTMiMtb5rKNqF8yOy2oX",
       "name": "bidding",
-      "x": 2582.8126186841373,
-      "y": 1710.0647380133125,
+      "x": 2562.4950988501428,
+      "y": 1709.4102614866538,
       "locked": false,
       "fields": [
         {
@@ -4935,6 +4935,19 @@
             "PARTIAL",
             "PAID"
           ]
+        },
+        {
+          "id": "ixdwgsDTIVVnEuZ3VgzyA",
+          "name": "trip_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
         }
       ],
       "comment": "",
@@ -5192,6 +5205,19 @@
           "id": "vbNvF6qbWnufUnQ3YEOLV",
           "name": "description",
           "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "qpzbOL-EWLnWqLi5BYI-N",
+          "name": "cost_agreement_rate_uuid",
+          "type": "VARCHAR",
           "default": "",
           "check": "",
           "primary": false,
@@ -5535,6 +5561,19 @@
           "increment": false,
           "comment": "",
           "size": ""
+        },
+        {
+          "id": "AQW0QQNHrvyR5HeXsDtmu",
+          "name": "notes",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
         }
       ],
       "comment": "",
@@ -5694,7 +5733,7 @@
         },
         {
           "id": "7calXofOTUXdzO1Al3lnX",
-          "name": "price",
+          "name": "cost",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -6235,8 +6274,8 @@
       "name": "Bidding",
       "x": 2161.106290464217,
       "y": 1633.6063644939527,
-      "width": 776.622875791686,
-      "height": 716.2750255105711,
+      "width": 992.7289380547104,
+      "height": 720.1668016123167,
       "color": "#36e3d5",
       "locked": false
     },
@@ -6314,10 +6353,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.1998725396012162,
+    "zoom": 0.31006791028265007,
     "pan": {
-      "x": 3718.061338605673,
-      "y": 153.43706781008018
+      "x": 3137.3598359927673,
+      "y": -164.66018834610213
     }
   }
 }
