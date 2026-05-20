@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-05-05T11:00:01.327Z",
+  "exported": "2026-05-20T13:18:18.354Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -165,8 +165,8 @@
       ],
       "indices": [],
       "id": "O-F8g9kq8Oc1yuAlNrW_A",
-      "x": 1859.6898934823132,
-      "y": -504.3167894929098
+      "x": 1887.563866448724,
+      "y": -515.0375546179098
     },
     {
       "name": "users",
@@ -3537,8 +3537,8 @@
     {
       "id": "b7bwQbulwIp_tgfFT-bfF",
       "name": "tax",
-      "x": 40.8757122430232,
-      "y": 1815.4990303500035,
+      "x": 41.94777239693386,
+      "y": 1833.7243392417984,
       "locked": false,
       "fields": [
         {
@@ -3552,6 +3552,19 @@
           "increment": false,
           "comment": "",
           "id": "-0Po39Q7iZVmb5W1OMmIo",
+          "size": ""
+        },
+        {
+          "id": "rN3xKhO7l7Tt4tDVaO6er",
+          "name": "tax_code",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
           "size": ""
         },
         {
@@ -3581,20 +3594,30 @@
           "size": "3"
         },
         {
-          "id": "JW8_Qggc30lrtZxbzRT6L",
-          "name": "status",
-          "type": "ENUM",
-          "default": "ACTIVE",
+          "id": "3U-VIXDC6CMhsntRaFIMo",
+          "name": "sell_financial_account_code",
+          "type": "VARCHAR",
+          "default": "",
           "check": "",
           "primary": false,
           "unique": false,
           "notNull": true,
           "increment": false,
-          "comment": "ACTIVE, SUSPEND",
-          "values": [
-            "ACTIVE",
-            "SUSPEND"
-          ]
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "A6Ogw8OlWDjF4T-J4EKw1",
+          "name": "buy_financial_account_code",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
         },
         {
           "id": "1D5rwdCVs8ESzY-pInt6N",
@@ -3637,6 +3660,20 @@
           "comment": "",
           "size": "",
           "values": []
+        },
+        {
+          "id": "wpRjGyjIp1mjc6TXxGOSo",
+          "name": "is_deletable",
+          "type": "BOOLEAN",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
         }
       ],
       "comment": "",
@@ -3645,13 +3682,13 @@
     },
     {
       "id": "GDeNZ2WvG4CHjAnzBLfZO",
-      "name": "transporter_shipper_partnership",
+      "name": "partner",
       "x": 4257.5822019405605,
       "y": -180.61349136921368,
       "locked": false,
       "fields": [
         {
-          "name": "transporter_shipper_partnership_uuid",
+          "name": "partner_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -3665,7 +3702,7 @@
         },
         {
           "id": "AbaAKTv1POPovb4GtsS6C",
-          "name": "transporter_uuid",
+          "name": "owner_account_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -4948,6 +4985,19 @@
           "increment": false,
           "comment": "",
           "size": ""
+        },
+        {
+          "id": "UYaHDqKbdFtgPtbgnIxyR",
+          "name": "city_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": ""
         }
       ],
       "comment": "",
@@ -5217,6 +5267,31 @@
         {
           "id": "qpzbOL-EWLnWqLi5BYI-N",
           "name": "cost_agreement_rate_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "naXIIiTJdeoCG_aRh-0X1",
+          "name": "shipping_cost",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "E9F0A2oD-aruVPNANyW2h",
+          "name": "sell_tax_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -5666,6 +5741,20 @@
           "increment": false,
           "comment": "",
           "size": ""
+        },
+        {
+          "id": "lTjN8osw97yX0Z2UdOd0p",
+          "name": "is_tax_inclusive",
+          "type": "BOOLEAN",
+          "default": "false",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
         }
       ],
       "comment": "",
@@ -5756,6 +5845,20 @@
           "increment": false,
           "comment": "",
           "size": ""
+        },
+        {
+          "id": "kFhx8bMB7iCP85ks8hqoY",
+          "name": "ppn_tax_load_uuid",
+          "type": "VARCHAR",
+          "default": "false",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
         }
       ],
       "comment": "",
@@ -6203,6 +6306,28 @@
       "deleteConstraint": "No action",
       "name": "fk_agent_partner_agent_partner_uuid_agreements",
       "id": "L3-6WAi41nGY4rUe91e6S"
+    },
+    {
+      "startTableId": "b7bwQbulwIp_tgfFT-bfF",
+      "startFieldId": "3U-VIXDC6CMhsntRaFIMo",
+      "endTableId": "GYLtbWTOL5VLgr80-J6Mg",
+      "endFieldId": "nbafB7kZV6GS_u0ZdA03g",
+      "cardinality": "many_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_tax_sell_financial_account_code_financial_account_close_book",
+      "id": "IIZjGAMHi1KyyxPSK2tRo"
+    },
+    {
+      "startTableId": "b7bwQbulwIp_tgfFT-bfF",
+      "startFieldId": "A6Ogw8OlWDjF4T-J4EKw1",
+      "endTableId": "GYLtbWTOL5VLgr80-J6Mg",
+      "endFieldId": "nbafB7kZV6GS_u0ZdA03g",
+      "cardinality": "many_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_tax_buy_financial_account_code_financial_account_close_book",
+      "id": "vjZbUone3-vN6IDvNUzXp"
     }
   ],
   "notes": [
@@ -6353,10 +6478,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.31006791028265007,
+    "zoom": 0.4362966876108568,
     "pan": {
-      "x": 3137.3598359927673,
-      "y": -164.66018834610213
+      "x": 3941.323545467986,
+      "y": 148.3726269471158
     }
   }
 }
