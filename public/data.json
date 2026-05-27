@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-05-20T13:18:18.354Z",
+  "exported": "2026-05-27T15:07:13.367Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -5301,6 +5301,43 @@
           "increment": false,
           "comment": "",
           "size": ""
+        },
+        {
+          "id": "Ml2oNjE3_P9WmPjKYDjXm",
+          "name": "sell_tax_name",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": 255
+        },
+        {
+          "id": "yyCd8_EwqkNDPPzmvl4B8",
+          "name": "sell_tax_rate",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "rxEdhXDqRL_qVRBX9Kr3o",
+          "name": "sell_tax_value",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
         }
       ],
       "comment": "",
@@ -5402,6 +5439,19 @@
           "primary": false,
           "unique": false,
           "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": ""
+        },
+        {
+          "id": "rV91Qz_AH7HBeCCOfBi97",
+          "name": "packing_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
           "increment": false,
           "comment": "",
           "size": ""
@@ -5592,70 +5642,6 @@
       "color": "#175e7a"
     },
     {
-      "id": "NGTxr8MeDS0LubNfBsSPc",
-      "name": "product_packing",
-      "x": 3881.5378369538066,
-      "y": -248.79531608775366,
-      "locked": false,
-      "fields": [
-        {
-          "name": "product_packing_uuid",
-          "type": "VARCHAR",
-          "default": "",
-          "check": "",
-          "primary": true,
-          "unique": true,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "id": "DGGU8bwT9CSoYFn-SKg6j",
-          "size": ""
-        },
-        {
-          "id": "TLrHITM7IxHbB85xpVSC0",
-          "name": "product_uuid",
-          "type": "VARCHAR",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "size": ""
-        },
-        {
-          "id": "5KaAVDqksWCXxraywK1DW",
-          "name": "packing_uuid",
-          "type": "VARCHAR",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "size": ""
-        },
-        {
-          "id": "AQW0QQNHrvyR5HeXsDtmu",
-          "name": "notes",
-          "type": "TEXT",
-          "default": "",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": false,
-          "increment": false,
-          "comment": "",
-          "size": ""
-        }
-      ],
-      "comment": "",
-      "indices": [],
-      "color": "#175e7a"
-    },
-    {
       "id": "aXOT9JX9Ki_IyJ7BKBCG3",
       "name": "agreements",
       "x": 4205.214376160324,
@@ -5809,7 +5795,7 @@
         },
         {
           "id": "jyyP5VBPerF9jjn20Snv8",
-          "name": "product_packing",
+          "name": "packing_uuid",
           "type": "VARCHAR",
           "default": "",
           "check": "",
@@ -6253,28 +6239,6 @@
       "id": "-TEO8aGkmgDSgANVaF8xN"
     },
     {
-      "startTableId": "Lvt7cskPnmqWZD3xQ14Al",
-      "startFieldId": "LBnDDJJ5fCWWAW3lA4yyk",
-      "endTableId": "NGTxr8MeDS0LubNfBsSPc",
-      "endFieldId": "TLrHITM7IxHbB85xpVSC0",
-      "cardinality": "one_to_many",
-      "updateConstraint": "No action",
-      "deleteConstraint": "No action",
-      "name": "fk_product_product_uuid_product_package",
-      "id": "emVPNoUmx_AeX5KEVEIN0"
-    },
-    {
-      "startTableId": "-DFqOYVV3RL-iD5aZtGyV",
-      "startFieldId": "9b3nJipd4o6o_B4SWzahu",
-      "endTableId": "NGTxr8MeDS0LubNfBsSPc",
-      "endFieldId": "5KaAVDqksWCXxraywK1DW",
-      "cardinality": "one_to_many",
-      "updateConstraint": "No action",
-      "deleteConstraint": "No action",
-      "name": "fk_package_package_uuid_product_package",
-      "id": "cH-WTtHmh5TFX5VDnWmlB"
-    },
-    {
       "startTableId": "aXOT9JX9Ki_IyJ7BKBCG3",
       "startFieldId": "FcMDDd5fTSJ4SwTx8yPdQ",
       "endTableId": "1mv2ZbRfPyQeI3-kVmfrG",
@@ -6328,6 +6292,28 @@
       "deleteConstraint": "No action",
       "name": "fk_tax_buy_financial_account_code_financial_account_close_book",
       "id": "vjZbUone3-vN6IDvNUzXp"
+    },
+    {
+      "startTableId": "Lvt7cskPnmqWZD3xQ14Al",
+      "startFieldId": "rV91Qz_AH7HBeCCOfBi97",
+      "endTableId": "-DFqOYVV3RL-iD5aZtGyV",
+      "endFieldId": "9b3nJipd4o6o_B4SWzahu",
+      "cardinality": "many_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_product_packing_uuid_packing",
+      "id": "-55j7qP92yZfj9VcjhPvR"
+    },
+    {
+      "startTableId": "1mv2ZbRfPyQeI3-kVmfrG",
+      "startFieldId": "jyyP5VBPerF9jjn20Snv8",
+      "endTableId": "-DFqOYVV3RL-iD5aZtGyV",
+      "endFieldId": "9b3nJipd4o6o_B4SWzahu",
+      "cardinality": "many_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_agreements_rate_packing_uuid_packing",
+      "id": "54HboNLnWTgVK6lAjhuzO"
     }
   ],
   "notes": [
@@ -6478,10 +6464,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.4362966876108568,
+    "zoom": 0.2678483190002373,
     "pan": {
-      "x": 3941.323545467986,
-      "y": 148.3726269471158
+      "x": 4664.887652527143,
+      "y": -435.80280656960986
     }
   }
 }
