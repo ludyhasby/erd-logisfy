@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exported": "2026-05-27T15:07:13.367Z",
+  "exported": "2026-06-17T13:48:27.643Z",
   "database": "generic",
   "title": "logisfy_erd",
   "tables": [
@@ -4688,8 +4688,8 @@
     {
       "id": "hBLNXqALTSfE3bmvDl2ki",
       "name": "delivery_order",
-      "x": 3441.3372552964533,
-      "y": -1571.1038147574816,
+      "x": 3429.5176117461406,
+      "y": -1749.5804594202177,
       "locked": false,
       "fields": [
         {
@@ -4998,6 +4998,120 @@
           "increment": false,
           "comment": "",
           "size": ""
+        },
+        {
+          "id": "DxloI-EvZor7IKFe9asZy",
+          "name": "ppn_load_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": 255
+        },
+        {
+          "id": "x56bM_WJnwSZG2Oer2_6A",
+          "name": "ppn_is_inclusive",
+          "type": "BOOLEAN",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "Q9nK3UNIpveHD1dzU6dNj",
+          "name": "ppn_load_value",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "3ze2HI4Lqo4qBIADU3VaE",
+          "name": "ppn_load_rate",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "nGQCpwWIug-REQDVXva5W",
+          "name": "pph_load_uuid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": 255
+        },
+        {
+          "id": "xgbe_HSq_5czg0RPTNr9E",
+          "name": "pph_load_value",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "MGgVKjQN60xdFhyJBLHRY",
+          "name": "pph_load_rate",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "nb2LtM-EyL2AHicc3pOMD",
+          "name": "pph_is_inclusive",
+          "type": "BOOLEAN",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "ZUsgWnCvc0Rd7UsDUFKC2",
+          "name": "nett_shipping_cost",
+          "type": "FLOAT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
         }
       ],
       "comment": "",
@@ -5096,8 +5210,8 @@
     {
       "id": "hAFYjnL2r_JZRryK8_A0L",
       "name": "delivery_order_detail",
-      "x": 3847.817212661365,
-      "y": -1310.8418060111728,
+      "x": 3846.6915494997584,
+      "y": -1438.0436756310385,
       "locked": false,
       "fields": [
         {
@@ -5323,7 +5437,7 @@
           "check": "",
           "primary": false,
           "unique": false,
-          "notNull": false,
+          "notNull": true,
           "increment": false,
           "comment": ""
         },
@@ -5727,20 +5841,6 @@
           "increment": false,
           "comment": "",
           "size": ""
-        },
-        {
-          "id": "lTjN8osw97yX0Z2UdOd0p",
-          "name": "is_tax_inclusive",
-          "type": "BOOLEAN",
-          "default": "false",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": true,
-          "increment": false,
-          "comment": "",
-          "size": "",
-          "values": []
         }
       ],
       "comment": "",
@@ -5750,8 +5850,8 @@
     {
       "id": "1mv2ZbRfPyQeI3-kVmfrG",
       "name": "agreements_rate",
-      "x": 4206.162892954661,
-      "y": 448.5355989284685,
+      "x": 4208.4142192778745,
+      "y": 395.6286144483341,
       "locked": false,
       "fields": [
         {
@@ -5831,20 +5931,6 @@
           "increment": false,
           "comment": "",
           "size": ""
-        },
-        {
-          "id": "kFhx8bMB7iCP85ks8hqoY",
-          "name": "ppn_tax_load_uuid",
-          "type": "VARCHAR",
-          "default": "false",
-          "check": "",
-          "primary": false,
-          "unique": false,
-          "notNull": false,
-          "increment": false,
-          "comment": "",
-          "size": "",
-          "values": []
         }
       ],
       "comment": "",
@@ -6423,10 +6509,10 @@
     {
       "id": 9,
       "name": "Delivery Order",
-      "x": 3346.2805487731384,
+      "x": 3349.622969592201,
       "y": -1792.5480060996654,
-      "width": 835.5445891917352,
-      "height": 1134.5142607070854,
+      "width": 842.7406212079713,
+      "height": 1275.8256148971986,
       "color": "#175e7a",
       "locked": false
     },
@@ -6464,10 +6550,10 @@
   "types": [],
   "enums": [],
   "transform": {
-    "zoom": 0.2678483190002373,
+    "zoom": 0.6768393620286867,
     "pan": {
-      "x": 4664.887652527143,
-      "y": -435.80280656960986
+      "x": 3652.7968446930613,
+      "y": -808.0765776646527
     }
   }
 }
